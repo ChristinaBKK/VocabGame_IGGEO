@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://christinabkk.github.io/VocabGame/confetti.css" />
   <script src="https://christinabkk.github.io/VocabGame/confetti.js"></script>
-  <script src="https://christinabkk.github.io/VocabGame_IGGEO/words.json"></script>
+  <script src="https://christinabkk.github.io/VocabGame/loadWords.js"></script>
 
   <style>
     :root {
@@ -961,7 +961,7 @@
         dropdownToggle.disabled = true;
         dropdownToggle.querySelector('#dropdown-text').textContent = 'Loading units...';
         // Load data
-        await VocabularyLoader.fetchVocabulary('https://christinabkk.github.io/VocabGame/loadWords.js');
+        await VocabularyLoader.fetchVocabulary('https://christinabkk.github.io/VocabGame_IGGEO/words.json');
         vocabularyData = VocabularyLoader.getVocabulary();
         // Validate data structure
         if (!Array.isArray(vocabularyData)) {
