@@ -1,0 +1,1757 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulary Memorization Game</title>
+</head>
+
+<body>
+  <input type="text" id="hidden-input" inputmode="text" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" />
+  <audio id="correct-sound" src="https://christinabkk.github.io/VocabGame/correct-156911.mp3" preload="auto"></audio>
+  <audio id="wrong-sound" src="https://christinabkk.github.io/VocabGame/wrong-47985.mp3" preload="auto"></audio>
+  <audio id="celebration-audio" src="https://christinabkk.github.io/VocabGame/Next.mp3" preload="auto"></audio>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://christinabkk.github.io/VocabGame/confetti.css" />
+  <script src="https://christinabkk.github.io/VocabGame/confetti.js"></script>
+  <script src="https://christinabkk.github.io/VocabGame/loadWords.js"></script>
+
+  <style>
+    :root {
+      --vh: 100%;
+      /* fallback */
+    }
+
+    .confetti-container {
+      position: fixed;
+      /* cover entire viewport */
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: calc(var(--vh, 1vh) * 100);
+      pointer-events: none;
+      /* so clicks pass through */
+      z-index: 9998;
+      /* Fix for scroll on mobile & desktop */
+      -webkit-overflow-scrolling: touch;
+      overflow: visible !important;
+    }
+
+    .completed-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1a2a6c 0%, #2c3e50 100%);
+      color: #333;
+      min-height: calc(var(--vh, 1vh) * 100);
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      /* center horizontally */
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .header {
+      background: linear-gradient(90deg, #3498db 0%, #2c3e50 100%);
+      color: white;
+      padding: 1.8rem;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .custom-dropdown {
+      position: relative;
+      display: inline-block;
+      width: 200px;
+      z-index: 1000;
+      /* Add this to ensure it appears above other elements */
+    }
+
+    /* Make all dropdown text normal weight */
+    .dropdown-toggle,
+    .dropdown-menu,
+    .dropdown-item,
+    .dropdown-item span {
+      font-weight: normal !important;
+      /* Forces normal weight */
+    }
+
+    /* If you want the button text to remain slightly bold */
+    .dropdown-toggle {
+      font-weight: 500;
+      /* Semi-bold instead of bold */
+    }
+
+    /* Specific style for checkbox labels */
+    .dropdown-item span {
+      font-weight: normal;
+    }
+
+    .custom-dropdown {
+      position: relative;
+      display: inline-block;
+      width: 200px;
+    }
+
+    .dropdown-toggle {
+      background-color: white;
+      color: #2c3e50;
+      padding: 10px 15px;
+      border: 2px solid #3498db;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      width: 100%;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .dropdown-toggle:hover {
+      background-color: #f8f9fa;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: white;
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      margin-top: 5px;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    .dropdown-menu.show {
+      display: block;
+    }
+
+    .dropdown-item {
+      display: block;
+      padding: 10px 15px;
+      cursor: pointer;
+      color: #2c3e50;
+    }
+
+    .dropdown-item:hover {
+      background-color: #f1f2f6;
+    }
+
+    .dropdown-item input {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    /* Add this to ensure the dropdown appears above the game container */
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      color: #ffffff;
+      font-size: 0.9rem;
+      background: linear-gradient(90deg, #3498db 0%, #2c3e50 100%);
+    }
+
+    .unit-selector {
+      background-color: #f8f9fa;
+      padding: 1.5rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .selector-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .selector-container label {
+      font-weight: 600;
+      color: #2c3e50;
+      font-size: 1rem;
+    }
+
+    select {
+      padding: 10px 15px;
+      border: 2px solid #3498db;
+      border-radius: 8px;
+      background-color: white;
+      font-size: 1rem;
+      color: #2c3e50;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      min-width: 150px;
+    }
+
+    select:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+    }
+
+    .game-container {
+      padding: 1.0rem 1.5rem 1.5rem;
+      min-height: 300px;
+    }
+
+    .progress-container {
+      margin-bottom: 2rem;
+      background-color: #f1f2f6;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .progress-bar {
+      height: 12px;
+      background-color: #e0e0e0;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-top: 8px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #3498db 0%, #2ecc71 100%);
+      width: 0%;
+      border-radius: 6px;
+      transition: width 0.3s ease;
+      /* Ensure this is present */
+      will-change: width;
+      /* Improves performance */
+    }
+
+    .progress-text {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      color: #2c3e50;
+      font-weight: 600;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #e0e0e0;
+    }
+
+    .hint {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(90deg, #f8f9fa 0%, #eef2f7 100%);
+      padding: 12px 15px;
+      border-radius: 8px;
+      font-weight: 600;
+      color: #2c3e50;
+      border-left: 4px solid #3498db;
+    }
+
+    .description {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: #2c3e50;
+      background: linear-gradient(to right, #f8f9fa, #ffffff);
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #2ecc71;
+    }
+
+    .letter-boxes-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .letter-boxes-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .letter-box {
+      min-width: 50px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+      background: #f1f2f6;
+      border-radius: 8px;
+      color: #2c3e50;
+    }
+
+    .letter-box.first-letter {
+      background: linear-gradient(135deg, #3498db, #2980b9);
+      color: white;
+    }
+
+    .letter-box.blank {
+      background: #f8f9fa;
+      border: 2px dashed #3498db;
+      color: transparent;
+      cursor: pointer;
+    }
+
+    .letter-box.blank:hover {
+      background: #e3f2fd;
+    }
+
+    .letter-box.user-input {
+      background: white;
+      border: 2px solid #3498db;
+      color: #2c3e50;
+    }
+
+    .letter-box.fixed {
+      background: transparent;
+      color: #2c3e50;
+      border: none;
+      cursor: default;
+      min-width: auto;
+      padding: 0 5px;
+    }
+
+    .letter-box.fixed-space {
+      min-width: 20px;
+    }
+
+    .letter-box.fixed-hyphen {
+      min-width: 20px;
+    }
+
+    .input-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 1.5rem;
+      justify-content: center;
+    }
+
+    /* Hidden input should be fully transparent but still focusable */
+    #hidden-input {
+      position: absolute;
+      font-size: 16px;
+      background: transparent;
+      top: 50%;
+      /* keep it inside viewport so Android focuses it */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.01;
+      /* fully invisible */
+      pointer-events: auto;
+      /* don't let clicks land here */
+      caret-color: transparent;
+      width: 40px;
+      height: 40px;
+      border: none;
+      outline: none;
+      padding: 0;
+      margin: 0;
+      z-index: 1000;
+      user-select: text;
+      -webkit-user-select: text;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .btn {
+      flex: 1;
+      max-width: 190px;
+      padding: 14px 28px;
+      background: linear-gradient(90deg, #3498db 0%, #2980b9 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background: linear-gradient(90deg, #2980b9 0%, #3498db 100%);
+    }
+
+    #clear-btn:hover {
+      background: linear-gradient(90deg, #c0392b 0%, #e74c3c 100%) !important;
+    }
+
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .score-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .score-box {
+      background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+      padding: 12px 25px;
+      border-radius: 8px;
+      min-width: 150px;
+      text-align: center;
+      border: 1px solid #e0e0e0;
+    }
+
+    .score-value {
+      font-size: 1.8rem;
+      color: #3498db;
+      margin-top: 5px;
+    }
+
+    .completed {
+      text-align: center;
+      padding: 40px 20px;
+      display: none;
+    }
+
+    .completed h2 {
+      font-size: 2rem;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .completed p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #7f8c8d;
+    }
+
+    .restart-btn {
+      background: linear-gradient(90deg, #2ecc71 0%, #27ae60 100%);
+      padding: 15px 40px;
+      font-size: 1.2rem;
+    }
+
+    .word-group {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 8px;
+    }
+
+    .completed-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+    }
+
+    .popup-content {
+      position: relative;
+      color: #27ae60;
+      font-size: 2.5rem;
+      background-color: white;
+      padding: 3rem;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .popup-close-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: transparent;
+      border: none;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+      line-height: 1;
+      z-index: 100000;
+    }
+
+    .popup-close-btn:hover {
+      color: #e74c3c;
+      /* Red on hover */
+    }
+
+    .popup-buttons {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    #stay-here-btn:hover {
+      background: linear-gradient(90deg, #c0392b 0%, #e74c3c 100%) !important;
+    }
+
+    @keyframes confetti-fall {
+      to {
+        transform: translateY(calc(var(--vh, 1vh) * 100));
+        opacity: 0;
+      }
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translateX(0);
+      }
+
+      20% {
+        transform: translateX(-6px);
+      }
+
+      40% {
+        transform: translateX(6px);
+      }
+
+      60% {
+        transform: translateX(-4px);
+      }
+
+      80% {
+        transform: translateX(4px);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .shake {
+      animation: shake 0.3s ease;
+    }
+
+    @media (max-width: 770px) {
+      .letter-box {
+        min-width: 35px;
+        height: 42px;
+        font-size: 1.3rem;
+        margin: 0 1.5px 4px;
+      }
+
+      .letter-box.fixed-space,
+      .letter-box.fixed-hyphen {
+        min-width: 6px;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .letter-box {
+        min-width: 25px;
+        height: 30px;
+        font-size: 1.2rem;
+        border-radius: 7px;
+        margin: 0 1px 3px;
+      }
+
+      .letter-box.blank::after {
+        font-size: 1.2rem;
+      }
+
+      .score-container {
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .hint,
+      .description {
+        font-size: 1rem;
+        line-height: 1.1;
+      }
+
+      .letter-boxes-row {
+        gap: 4px;
+        /* Smallest gap on phones */
+      }
+
+      #completed-popup {
+        display: flex;
+        /* ensure flex */
+        justify-content: center;
+        /* horizontal center */
+        align-items: center;
+        /* vertical center */
+        position: fixed;
+        /* fix on viewport */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        /* dim background */
+        z-index: 10000;
+      }
+
+      #popup-content {
+        position: relative;
+        width: 60%;
+        padding: 0.8rem;
+        font-size: 0.8rem;
+      }
+
+      #completed-popup h2,
+      .completed-popup h3 {
+        font-size: 2rem;
+      }
+
+      #completed-popup .popup-content {
+        font-size: 0.8rem;
+        /* main content */
+      }
+
+      #completed-popup button {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+      }
+
+      .btn {
+        flex: 1;
+        max-width: 140px;
+        padding: 14px 28px;
+        background: linear-gradient(90deg, #3498db 0%, #2980b9 100%);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+
+      .score-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .score-box {
+        background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+        padding: 12px 25px;
+        border-radius: 8px;
+        min-width: 150px;
+        text-align: center;
+        border: 1px solid #e0e0e0;
+      }
+
+      .score-value {
+        font-size: 1.5rem;
+        color: #3498db;
+        margin-top: 5px;
+      }
+
+      .word-group {
+        gap: 3px;
+      }
+    }
+
+    @media (max-width: 393px) {
+      .letter-box {
+        min-width: 20px;
+        height: 24px;
+        font-size: 1rem;
+        border-radius: 5px;
+        margin: 0 0.5px 2px;
+      }
+
+      .letter-box.fixed-space,
+      .letter-box.fixed-hyphen {
+        min-width: 4px;
+        /* Minimal size */
+      }
+
+      .word-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+      }
+
+      .hint,
+      .description {
+        font-size: 1.0rem;
+        line-height: 1.0;
+      }
+    }
+
+    /* Enhanced confetti */
+    .confetti {
+      position: fixed;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      z-index: 9999;
+      pointer-events: none;
+    }
+
+    @keyframes confetti-fall {
+      0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(calc(var(--vh, 1vh) * 100)) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Completion screen styling */
+    .completed h2 {
+      color: #27ae60;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .completed p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+  </style>
+
+  <div class="confetti-container" id="confetti-container"></div>
+  <div class="container">
+    <div class="header">
+      <h1><i class="fas fa-brain"></i> AP US History <br />Vocabulary Quiz</h1>
+      <p>Test your knowledge of historical terms and concepts</p>
+    </div>
+
+    <div class="unit-selector">
+      <div class="selector-container">
+        <label><i class="fas fa-book-open"></i> Select Unit(s):</label>
+        <div class="custom-dropdown">
+          <button class="dropdown-toggle" id="dropdown-toggle" disabled>
+            <span id="dropdown-text">Loading units...</span>
+            <i class="fas fa-caret-down"></i>
+          </button>
+          <div class="dropdown-menu" id="dropdown-menu">
+            <!-- Only keep the "All Units" container -->
+            <label class="dropdown-item all-units-item">
+              <input type="checkbox" class="unit-option" value="all" checked />
+              <span>All Units</span>
+            </label>
+            <!-- Dynamic units will be inserted here by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="completed-popup" id="completed-popup" style="display: none">
+      <div class="popup-content">
+        <button class="popup-close-btn" aria-label="Close popup">&times;</button>
+        <h3>Unit Completed!</h3>
+        <div style="font-size: 6rem; color: gold; margin: 1rem 0; text-align: center; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);">
+          <i class="fa-solid fa-trophy"></i>
+        </div>
+        <div class="popup-buttons">
+          <button id="next-chapter-btn" class="btn">Next Chapter</button>
+          <button id="stay-here-btn" class="btn" style="background: linear-gradient(90deg, #e74c3c, #c0392b)">
+            Redo this Chapter
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="progress-container">
+        <div class="progress-text">
+          <span>Progress</span>
+          <span id="progress-text">0/7</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="hint">
+          <span id="date-hint"></span>
+          <span>Letters: <strong id="letter-count"></strong></span>
+        </div>
+
+        <div class="description" id="term-description"></div>
+        <div class="letter-boxes-container" id="letter-boxes-container"></div>
+        <div class="button-container">
+          <button class="btn" id="submit-btn">Submit Answer</button>
+          <button class="btn" id="clear-btn" style="background: linear-gradient(90deg, #e74c3c, #c0392b)">Clear</button>
+        </div>
+
+        <div class="message" id="message"></div>
+
+        <div class="animation-container" id="animation-container"></div>
+      </div>
+
+      <div class="score-container">
+        <div class="score-box">
+          <div>Correct Answers</div>
+          <div class="score-value" id="correct-count">0</div>
+        </div>
+        <div class="score-box">
+          <div>Attempts</div>
+          <div class="score-value" id="attempts-count">0</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Dr. Christina Feng - DSAS Secondary © 2025 | Educational Tool for
+        Students
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const hiddenInput = document.getElementById('hidden-input');
+
+    function isAndroid() {
+      return /Android/i.test(navigator.userAgent);
+    }
+    // Focus hidden input on letter box click, with optional delay for Android
+    function focusHiddenInput() {
+      if (isAndroid()) {
+        setTimeout(() => {
+          hiddenInput.focus();
+        }, 50);
+      } else {
+        hiddenInput.focus();
+      }
+    }
+    // Attach click listeners to letter boxes
+    document.querySelectorAll('.letter-box').forEach(box => {
+      box.addEventListener('click', focusHiddenInput);
+    });
+
+    function updateHiddenInputPosition() {
+      const activeBox = letterBoxesContainer.querySelector(`.letter-box[data-index="${currentBlankIndex}"]`);
+      if (activeBox) {
+        const rect = activeBox.getBoundingClientRect();
+        hiddenInput.style.position = 'absolute';
+        hiddenInput.style.top = `${rect.top + window.scrollY}px`;
+        hiddenInput.style.left = `${rect.left + window.scrollX}px`;
+        // On Android, ensure minimum size and slight opacity
+        if (isAndroid()) {
+          hiddenInput.style.width = `${Math.max(rect.width, 20)}px`;
+          hiddenInput.style.height = `${Math.max(rect.height, 30)}px`;
+          hiddenInput.style.opacity = '0.01';
+          hiddenInput.style.pointerEvents = 'auto';
+        } else {
+          // For iOS and desktop keep your normal sizing and full opacity if you want
+          hiddenInput.style.width = `${rect.width}px`;
+          hiddenInput.style.height = `${rect.height}px`;
+          hiddenInput.style.opacity = '1';
+          hiddenInput.style.pointerEvents = 'none';
+        }
+        hiddenInput.focus();
+      } else {
+        hiddenInput.style.opacity = '0';
+        hiddenInput.style.pointerEvents = 'none';
+      }
+    }
+    // When moving cursor:
+    function moveToNextBlank() {
+      const currentIdx = editableIndices.indexOf(currentBlankIndex);
+      if (currentIdx < editableIndices.length - 1) {
+        currentBlankIndex = editableIndices[currentIdx + 1];
+        updateActiveBlank(); // update visible cursor styling
+        updateHiddenInputPosition(); // position hidden input for mobile input
+      }
+    }
+
+    function moveToPreviousBlank() {
+      const currentIdx = editableIndices.indexOf(currentBlankIndex);
+      if (currentIdx > 0) {
+        currentBlankIndex = editableIndices[currentIdx - 1];
+        updateActiveBlank();
+        updateHiddenInputPosition();
+      }
+    }
+
+    function handleHiddenInput(e) {
+      const val = e.target.value;
+      if (/^[a-z]$/i.test(val)) {
+        userInput[currentBlankIndex] = val;
+        fillBlank(val);
+      }
+      e.target.value = ''; // Clear input to accept next letter
+      updateHiddenInputPosition();
+    }
+    hiddenInput.addEventListener('input', handleHiddenInput);
+    let vocabularyData = []; // Global variable
+    let gameInitialized = false; // Track if data is loaded
+    // Load data first, THEN initialize game
+    async function initializeApp() {
+      try {
+        // Show loading state
+        const dropdownToggle = document.getElementById('dropdown-toggle');
+        dropdownToggle.disabled = true;
+        dropdownToggle.querySelector('#dropdown-text').textContent = 'Loading units...';
+        // Load data
+        await VocabularyLoader.fetchVocabulary('https://christinabkk.github.io/VocabGame/words.json');
+        vocabularyData = VocabularyLoader.getVocabulary();
+        // Validate data structure
+        if (!Array.isArray(vocabularyData)) {
+          throw new Error('Invalid vocabulary data format');
+        }
+        // Debug: Log first few terms to verify structure
+        console.log('Sample terms:', vocabularyData.slice(0, 3));
+        // Setup UI
+        setupDropdown();
+        initGame();
+      } catch (error) {
+        console.error('Initialization failed:', error);
+        document.getElementById('dropdown-text').textContent = 'Load failed - Retry';
+        document.getElementById('dropdown-toggle').disabled = false;
+        document.getElementById('dropdown-toggle').onclick = initializeApp;
+      }
+    }
+    // Call this instead of initGame() on startup
+    initializeApp();
+    // Game state variables
+    let currentTerms = [];
+    let currentTermIndex = 0;
+    let correctAnswers = 0;
+    let totalAttempts = 0;
+    let gameActive = true;
+    let currentBlankIndex = 1;
+    let userInput = [];
+    let editableIndices = [];
+    let currentChapter = 1; // Initialize with first chapter
+    // DOM Elements
+    const unitSelect = document.getElementById('unit-select');
+    const dateHint = document.getElementById('date-hint');
+    const letterCount = document.getElementById('letter-count');
+    const termDescription = document.getElementById('term-description');
+    const submitBtn = document.getElementById('submit-btn');
+    const clearBtn = document.getElementById('clear-btn');
+    const messageEl = document.getElementById('message');
+    const progressText = document.getElementById('progress-text');
+    const progressFill = document.querySelector('.progress-fill');
+    const correctCount = document.getElementById('correct-count');
+    const attemptsCount = document.getElementById('attempts-count');
+    const completedScreen = document.getElementById('completed-screen');
+    const restartBtn = document.getElementById('restart-btn');
+    const animationContainer = document.getElementById('animation-container');
+    const letterBoxesContainer = document.getElementById('letter-boxes-container');
+    const finalScore = document.getElementById('final-score');
+    const totalTerms = document.getElementById('total-terms');
+    const correctSound = document.getElementById('correct-sound');
+    const wrongSound = document.getElementById('wrong-sound');
+
+    function getSafeUnits(vocabularyData) {
+      return [...new Set(
+        vocabularyData
+        .map(term => term.unit)
+        .filter(unit => unit != null)
+        .map(unit => String(unit))
+      )];
+    }
+
+    function sortUnits(units) {
+      // Map each unit to the lowest chapter number it appears in
+      const unitChapterMap = {};
+      units.forEach(unit => {
+        const chaptersForUnit = vocabularyData
+          .filter(term => String(term.unit) === unit && term.chapter !== undefined)
+          .map(term => term.chapter);
+        if (chaptersForUnit.length > 0) {
+          unitChapterMap[unit] = Math.min(...chaptersForUnit);
+        }
+      });
+      return units.sort((a, b) => {
+        const chapterA = unitChapterMap[a];
+        const chapterB = unitChapterMap[b];
+        if (chapterA !== undefined && chapterB !== undefined) {
+          if (chapterA !== chapterB) {
+            return chapterA - chapterB;
+          }
+          return a.localeCompare(b);
+        }
+        if (chapterA !== undefined) return -1;
+        if (chapterB !== undefined) return 1;
+        return a.localeCompare(b);
+      });
+    }
+    // GLOBAL function so any part of the code can call it
+    function updateDropdownText() {
+      const selected = Array.from(document.querySelectorAll('.unit-option:checked'))
+        .filter((opt) => opt.value !== 'all')
+        .map((opt) => opt.value);
+      const dropdownText = document.getElementById('dropdown-text');
+      const selectAll = document.querySelector('.unit-option[value="all"]');
+      if (selected.length === 0 || (selectAll && selectAll.checked)) {
+        dropdownText.textContent = 'All Units';
+      } else if (selected.length === 1) {
+        dropdownText.textContent = `Unit ${selected[0]}`;
+      } else {
+        dropdownText.textContent = `${selected.length} Units Selected`;
+      }
+    }
+    // Dropdown functionality
+    // Global variable to track loaded units
+    let availableUnits = [];
+
+    function setupDropdown() {
+      const dropdownMenu = document.getElementById('dropdown-menu');
+      const allUnitsItem = dropdownMenu.querySelector('.all-units-item');
+      // Clear previous units
+      dropdownMenu.querySelectorAll('.dropdown-item:not(.all-units-item)').forEach(el => el.remove());
+      // Get and sort units safely
+      availableUnits = sortUnits(getSafeUnits(vocabularyData));
+      // Add unit options
+      availableUnits.forEach(unit => {
+        const unitItem = document.createElement('label');
+        unitItem.className = 'dropdown-item';
+        unitItem.innerHTML = `
+      <input type="checkbox" class="unit-option" value="${unit}" />
+      <span>Unit ${unit}</span>
+    `;
+        dropdownMenu.appendChild(unitItem);
+      });
+      // Initialize dropdown behavior
+      initDropdownBehavior();
+      updateDropdownText();
+      // Enable dropdown
+      const dropdownToggle = document.getElementById('dropdown-toggle');
+      dropdownToggle.disabled = false;
+      dropdownToggle.querySelector('#dropdown-text').textContent = 'All Units';
+    }
+
+    function initDropdownBehavior() {
+      const dropdownToggle = document.getElementById('dropdown-toggle');
+      const dropdownMenu = document.getElementById('dropdown-menu');
+      // Remove any existing listeners to prevent duplicates
+      dropdownToggle.replaceWith(dropdownToggle.cloneNode(true));
+      dropdownMenu.replaceWith(dropdownMenu.cloneNode(true));
+      // Get fresh references after clone
+      const freshToggle = document.getElementById('dropdown-toggle');
+      const freshMenu = document.getElementById('dropdown-menu');
+      // Toggle dropdown visibility
+      freshToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        freshMenu.classList.toggle('show');
+      });
+      // Close when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!freshMenu.contains(e.target) && e.target !== freshToggle) {
+          freshMenu.classList.remove('show');
+        }
+      });
+      // Handle checkbox changes using event delegation
+      freshMenu.addEventListener('change', function(e) {
+        if (!e.target.classList.contains('unit-option')) return;
+        const changedOption = e.target;
+        const allUnitsOption = document.querySelector('.unit-option[value="all"]');
+        if (changedOption.value === 'all' && changedOption.checked) {
+          // Uncheck all other options when "All" is selected
+          document.querySelectorAll('.unit-option:not([value="all"])').forEach(opt => {
+            opt.checked = false;
+          });
+        } else if (changedOption.checked) {
+          // Uncheck "All" when specific units are selected
+          allUnitsOption.checked = false;
+        }
+        updateDropdownText();
+        initGame();
+      });
+    }
+
+    function updateDropdownText() {
+      const selectedOptions = Array.from(document.querySelectorAll('.unit-option:checked'))
+        .filter(opt => opt.value !== 'all')
+        .map(opt => opt.value);
+      const dropdownText = document.getElementById('dropdown-text');
+      if (selectedOptions.length === 0 || document.querySelector('.unit-option[value="all"]').checked) {
+        dropdownText.textContent = 'All Units';
+      } else if (selectedOptions.length === 1) {
+        dropdownText.textContent = `Unit ${selectedOptions[0]}`;
+      } else if (selectedOptions.length === availableUnits.length) {
+        dropdownText.textContent = 'All Units';
+        document.querySelector('.unit-option[value="all"]').checked = true;
+        document.querySelectorAll('.unit-option:not([value="all"])').forEach(opt => {
+          opt.checked = false;
+        });
+      } else {
+        dropdownText.textContent = `${selectedOptions.length} Units Selected`;
+      }
+    }
+    
+    function hideDropdown() {
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  if (dropdownMenu && dropdownMenu.classList.contains('show')) {
+    dropdownMenu.classList.remove('show');
+  }
+}
+    
+    // Hide dropdown when user clicks a letter box
+document.querySelectorAll('.letter-box').forEach(box => {
+  box.addEventListener('click', () => {
+    hideDropdown();
+    // existing code to focus input or other stuff can go here
+  });
+});
+
+// Hide dropdown on input in hidden input (mobile)
+if (hiddenInput) {
+  hiddenInput.addEventListener('input', () => {
+    hideDropdown();
+  });
+}
+
+// Hide dropdown on typing anywhere on PC visible inputs
+document.querySelectorAll('input[type="text"], textarea').forEach(input => {
+  input.addEventListener('input', () => {
+    hideDropdown();
+  });
+});
+
+// Also, if you want to catch keyboard typing anywhere on PC, use keydown on document:
+document.addEventListener('keydown', (e) => {
+  // Optionally, add conditions to ignore if dropdown not open or on some inputs
+  hideDropdown();
+});
+
+// Hide dropdown when user submits or clears input
+// Example: Assuming you have submit and clear buttons like these:
+if (submitBtn) {
+  submitBtn.addEventListener('click', () => {
+    hideDropdown();
+    // your existing submit logic here
+  });
+}
+
+if (clearBtn) {
+  clearBtn.addEventListener('click', () => {
+    hideDropdown();
+    // your existing clear logic here
+  });
+}
+
+// Optional: Hide dropdown if clicking outside the dropdown area
+document.addEventListener('click', (e) => {
+  const dropdown = document.querySelector('.custom-dropdown');
+  if (dropdown && !dropdown.contains(e.target)) {
+    hideDropdown();
+  }
+});
+    // Initialize the game
+    function initGame() {
+      // Guard clause for empty vocabulary data
+      if (vocabularyData.length === 0) {
+        console.warn("Vocabulary data not loaded yet!");
+        return;
+      }
+      // Get selected units
+      const selectedUnits = Array.from(document.querySelectorAll('.unit-option:checked'))
+        .map(checkbox => checkbox.value)
+        .filter(value => value !== 'all');
+      if (selectedUnits.length === 0 || document.querySelector('.unit-option[value="all"]').checked) {
+        currentTerms = [...vocabularyData];
+      } else {
+        currentTerms = vocabularyData.filter(term =>
+          selectedUnits.some(unit => String(term.unit) === unit)
+        );
+      }
+      // Validate we have terms
+      if (currentTerms.length === 0) {
+        messageEl.textContent = 'No terms found for selected unit(s)';
+        messageEl.className = 'message error';
+        // Reset game state but don't proceed further
+        resetGameState();
+        return;
+      }
+      // Reset game state
+      resetGameState();
+      // Initialize with filtered terms
+      currentTerms.sort(() => Math.random() - 0.5);
+      currentTermIndex = 0; // Make sure we start at the first term
+      showTerm(currentTermIndex);
+    }
+
+    function resetGameState() {
+      currentTermIndex = 0;
+      correctAnswers = 0;
+      totalAttempts = 0;
+      gameActive = true;
+      userInput = [];
+      editableIndices = [];
+      animationContainer.innerHTML = '';
+      updateScore();
+      document.addEventListener('keydown', handleKeyDown);
+    }
+    // Create letter boxes for the current term
+    function createLetterBoxes(term) {
+      letterBoxesContainer.innerHTML = ''; // Clear any existing content
+      currentBlankIndex = 1;
+      userInput = Array(term.length).fill('');
+      editableIndices = [];
+      const letters = term.split('');
+      letterCount.textContent = term.replace(/[^a-zA-Z]/g, '').length;
+      const rows = [];
+      let currentRow = [];
+      let currentWord = [];
+      for (let i = 0; i < letters.length; i++) {
+        const isLetter = /[a-zA-Z]/.test(letters[i]);
+        if (i === 0) {
+          currentWord.push({
+            index: i,
+            char: letters[i],
+            type: 'first-letter',
+            isLetter: true,
+          });
+          userInput[i] = letters[i];
+        } else if (!isLetter) {
+          let boxType = 'fixed';
+          if (letters[i] === ' ') {
+            boxType = 'fixed-space';
+          } else if (letters[i] === '-') {
+            boxType = 'fixed-hyphen';
+          }
+          currentWord.push({
+            index: i,
+            char: letters[i],
+            type: boxType,
+            isLetter: false,
+          });
+          userInput[i] = letters[i];
+          if (letters[i] === ' ' || letters[i] === '-') {
+            currentRow.push(currentWord);
+            currentWord = [];
+          }
+        } else {
+          currentWord.push({
+            index: i,
+            char: letters[i],
+            type: 'blank',
+            isLetter: true,
+          });
+          userInput[i] = '';
+          editableIndices.push(i);
+        }
+      }
+      if (currentWord.length > 0) {
+        currentRow.push(currentWord);
+      }
+      rows.push(currentRow);
+      rows.forEach((row) => {
+        const rowElement = document.createElement('div');
+        rowElement.className = 'letter-boxes-row';
+        row.forEach((word) => {
+          const wordGroup = document.createElement('div');
+          wordGroup.className = 'word-group';
+          word.forEach((letter) => {
+            const letterBox = document.createElement('div');
+            letterBox.className = `letter-box ${letter.type}`;
+            letterBox.dataset.index = letter.index;
+            if (letter.type === 'first-letter' || letter.type.includes('fixed')) {
+              letterBox.textContent = letter.char;
+              letterBox.style.pointerEvents = 'none'; // Make non-interactive
+            } else if (letter.type === 'blank') {
+              letterBox.innerHTML = '<span class="underscore">_</span>';
+              // Add click handler
+              letterBox.addEventListener('click', () => {
+                currentBlankIndex = letter.index;
+                updateActiveBlank();
+              });
+            }
+            wordGroup.appendChild(letterBox);
+          });
+          rowElement.appendChild(wordGroup);
+        });
+        letterBoxesContainer.appendChild(rowElement);
+      });
+      if (editableIndices.length > 0) {
+        currentBlankIndex = editableIndices[0];
+        updateActiveBlank();
+      }
+    }
+
+    function fillBlank(char) {
+      const box = document.querySelector(`[data-index="${currentBlankIndex}"]`);
+      if (!box) return;
+      // Always replace the content
+      box.textContent = char;
+      // Force repaint to fix Android rendering issues
+      box.style.display = 'none';
+      box.offsetHeight; // Trigger reflow
+      box.style.display = '';
+      box.classList.remove('blank');
+      box.classList.add('user-input');
+      userInput[currentBlankIndex] = char;
+      // Move to next editable index
+      const currentIdx = editableIndices.indexOf(currentBlankIndex);
+      if (currentIdx < editableIndices.length - 1) {
+        currentBlankIndex = editableIndices[currentIdx + 1];
+        updateActiveBlank();
+      } else {
+        updateHiddenInputPosition();
+      }
+    }
+
+    function handleKeyDown(e) {
+      if (!gameActive) return;
+      // Prevent default for spacebar
+      if (e.key === ' ') {
+        e.preventDefault();
+        return;
+      }
+      if (e.key.length === 1 && e.key.match(/[a-zA-Z]/)) {
+        e.preventDefault(); // prevent double input
+        fillBlank(e.key);
+        updateHiddenInputPosition();
+      } else if (e.key === 'Backspace') {
+        e.preventDefault();
+        handleBackspace();
+        updateHiddenInputPosition();
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        moveToPreviousBlank();
+        updateHiddenInputPosition();
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        moveToNextBlank();
+        updateHiddenInputPosition();
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        checkAnswer();
+      }
+    }
+
+    function clearBlank() {
+      const blank = document.querySelector(`[data-index="${currentBlankIndex}"]`);
+      if (blank && blank.classList.contains('user-input')) {
+        blank.textContent = '';
+        blank.classList.remove('user-input');
+        blank.classList.add('blank');
+        blank.innerHTML = '<span class="underscore">_</span>';
+        userInput[currentBlankIndex] = '';
+      }
+    }
+
+    function clearAllBlanks() {
+      // Only reset the editable blanks tracked in editableIndices
+      for (let i = 0; i < editableIndices.length; i++) {
+        const index = editableIndices[i];
+        const blank = document.querySelector(`[data-index="${index}"]`);
+        if (!blank) continue;
+        // Clear only the inline styles that checkAnswer sets (preserve any other layout styles)
+        blank.style.backgroundColor = '';
+        blank.style.borderColor = '';
+        blank.style.boxShadow = '';
+        // Remove transient classes and ensure it's the "blank" state again
+        blank.classList.remove('user-input', 'shake');
+        blank.classList.add('blank');
+        // Put back the underscore placeholder and reset model state
+        blank.innerHTML = '<span class="underscore">_</span>';
+        userInput[index] = '';
+      }
+      // Reset active blank highlight
+      if (editableIndices.length > 0) {
+        currentBlankIndex = editableIndices[0];
+        updateActiveBlank();
+      }
+      // Optional: restore neutral message state
+      messageEl.className = 'message';
+      messageEl.textContent = '';
+    }
+
+    function handleBackspace() {
+      const currentIdx = editableIndices.indexOf(currentBlankIndex);
+      const currentValue = userInput[currentBlankIndex];
+      // If there's a letter in current box, delete it
+      if (currentValue !== '') {
+        clearBlank();
+        updateHiddenInputPosition();
+      } else if (currentIdx > 0) {
+        // Move to previous and clear that
+        currentBlankIndex = editableIndices[currentIdx - 1];
+        clearBlank();
+        updateActiveBlank();
+        updateHiddenInputPosition();
+      }
+    }
+
+    function updateActiveBlank() {
+      // Remove highlight from all blanks
+      document.querySelectorAll('.blank, .user-input').forEach((box) => {
+        box.style.boxShadow = 'none';
+        box.style.border = box.classList.contains('user-input') ?
+          '2px solid #3498db' :
+          '2px dashed #3498db';
+        box.style.transform = 'none';
+      });
+      // Highlight current blank
+      const currentBlank = document.querySelector(
+        `[data-index="${currentBlankIndex}"]`,
+      );
+      if (currentBlank) {
+        currentBlank.style.boxShadow = '0 0 10px rgba(52, 152, 219, 0.7)';
+        currentBlank.style.border = '2px solid #3498db';
+        currentBlank.style.transform = 'scale(1.05)';
+      }
+      updateHiddenInputPosition();
+    }
+
+    function checkAnswer() {
+      totalAttempts++; // Increment attempts counter
+      updateScore(); // Update the score display
+      const term = currentTerms[currentTermIndex].term;
+      let allCorrect = true;
+      const boxes = document.querySelectorAll('.letter-box');
+      boxes.forEach((box) => {
+        const index = parseInt(box.dataset.index);
+        if (isNaN(index)) return;
+        // Skip non-letter boxes (spaces, hyphens, etc.)
+        if (
+          box.classList.contains('fixed') ||
+          box.classList.contains('fixed-space') ||
+          box.classList.contains('fixed-hyphen')
+        ) {
+          return;
+        }
+        const expected = term[index];
+        const actual = userInput[index];
+        if (!expected) return;
+        box.style.transition = 'background-color 0.3s ease, border-color 0.3s ease';
+        if (actual && actual.toLowerCase() === expected.toLowerCase()) {
+          box.style.backgroundColor = '#d1fae5';
+          box.style.borderColor = '#34d399';
+        } else {
+          box.style.backgroundColor = '#fee2e2';
+          box.style.borderColor = '#f87171';
+          allCorrect = false;
+          box.classList.add('shake');
+          box.addEventListener(
+            'animationend',
+            () => {
+              box.classList.remove('shake');
+            }, {
+              once: true
+            },
+          );
+        }
+      });
+      if (allCorrect) {
+        correctAnswers++; // Increment correct answers counter
+        updateScore(); // Update the score display
+        correctSound.currentTime = 0;
+        correctSound.play();
+        //messageEl.textContent = 'Correct! Well done!';
+        //messageEl.className = 'message success';
+        // Clear any existing confetti before showing new ones
+        animationContainer.innerHTML = '';
+        if (gameActive) {
+          for (let i = 0; i < 50; i++) {
+            const confetti = document.createElement('div');
+            confetti.className = 'confetti';
+            confetti.style.position = 'fixed';
+            confetti.style.top = '0';
+            confetti.style.width = '8px';
+            confetti.style.height = '8px';
+            confetti.style.borderRadius = '50%';
+            confetti.style.pointerEvents = 'none';
+            confetti.style.zIndex = '9999';
+            confetti.style.left = `${Math.random() * 100}%`;
+            confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 70%, 60%)`;
+            confetti.style.animation = `confetti-fall 1.5s linear forwards`;
+            confetti.style.animationDelay = `${Math.random() * 0.5}s`;
+            animationContainer.appendChild(confetti);
+          }
+        }
+        setTimeout(() => {
+          currentTermIndex++;
+          if (currentTermIndex < currentTerms.length) {
+            showTerm(currentTermIndex);
+          } else {
+            endGame();
+          }
+        }, 1000);
+      } else {
+        wrongSound.currentTime = 0;
+        wrongSound.play();
+        //messageEl.textContent = 'Not quite. Try again!';
+        messageEl.className = 'message error';
+      }
+    }
+
+    function updateScore() {
+      correctCount.textContent = correctAnswers;
+      attemptsCount.textContent = totalAttempts;
+    }
+
+    function getAvailableChapters() {
+      return [
+        ...new Set(
+          vocabularyData
+          .filter((term) => term.chapter !== undefined)
+          .map((term) => term.chapter),
+        ),
+      ].sort((a, b) => a - b);
+    }
+
+    function isLastChapter(currentChap) {
+      const chapters = getAvailableChapters();
+      return currentChap >= Math.max(...chapters);
+    }
+
+    function updateChapterDisplay() {
+      const chapterDisplay = document.getElementById('current-chapter');
+      if (chapterDisplay) {
+        chapterDisplay.textContent = currentChapter;
+      }
+    }
+
+    function showTerm(index) {
+      // Boundary check - should only end game if we're past the last term
+      if (index >= currentTerms.length || currentTerms.length === 0) {
+        endGame();
+        return;
+      }
+      const term = currentTerms[index];
+      // Update UI elements
+      dateHint.textContent = term.date ? `Date: ${term.date}` : '';
+      termDescription.textContent = term.description;
+      createLetterBoxes(term.term);
+      // Update progress indicators
+      updateProgressDisplay(index);
+      messageEl.className = 'message';
+      messageEl.textContent = '';
+    }
+
+    function updateProgressDisplay(currentIndex) {
+      const progressFill = document.querySelector('.progress-fill');
+      const progressText = document.getElementById('progress-text');
+      if (progressFill && progressText) {
+        const progressPercent = ((currentIndex) / currentTerms.length) * 100;
+        progressFill.style.width = `${progressPercent}%`;
+        progressText.textContent = `${currentIndex + 1}/${currentTerms.length}`;
+      }
+    }
+
+    function loadChapter(chapterNumber) {
+      currentChapter = chapterNumber;
+      const chapterUnits = [
+        ...new Set(
+          vocabularyData
+          .filter(term => term.chapter === currentChapter)
+          .map(term => String(term.unit))
+        )
+      ];
+      const unitOptions = document.querySelectorAll('.unit-option');
+      unitOptions.forEach((opt) => {
+        if (opt.value === 'all') {
+          opt.checked = false;
+        } else {
+          opt.checked = chapterUnits.includes(opt.value);
+        }
+      });
+      updateDropdownText();
+      // Load terms for this chapter
+      currentTerms = vocabularyData.filter(
+        (term) => term.chapter === currentChapter,
+      );
+      currentTerms.sort(() => Math.random() - 0.5);
+      currentTermIndex = 0;
+      correctAnswers = 0;
+      totalAttempts = 0;
+      // Reset progress bar
+      const progressFill = document.querySelector('.progress-fill');
+      const progressText = document.getElementById('progress-text');
+      if (progressFill) progressFill.style.width = '0%';
+      if (progressText)
+        progressText.textContent = `1 / ${currentTerms.length} terms`;
+      // Update UI
+      updateChapterDisplay();
+      updateScore();
+      gameActive = true;
+      showTerm(currentTermIndex);
+      // Re-enable keyboard
+      document.addEventListener('keydown', handleKeyDown);
+    }
+
+    function loadNextChapter() {
+      const availableChapters = [
+        ...new Set(
+          vocabularyData
+          .map((item) => item.chapter)
+          .filter((ch) => ch !== undefined),
+        ),
+      ].sort((a, b) => a - b);
+      let currentIndex = availableChapters.indexOf(currentChapter);
+      currentIndex++;
+      if (currentIndex < availableChapters.length) {
+        loadChapter(availableChapters[currentIndex]);
+      } else {
+        console.log('No next chapter available — ending game');
+        endGame();
+      }
+    }
+
+    function restartEntireCourse() {
+      document.getElementById('completed-popup').style.display = 'none';
+      loadChapter(1); // restart at first chapter
+    }
+
+    function showCelebration() {
+      if (typeof startConfetti === 'function') {
+        startConfetti();
+        const audioEl = document.getElementById('celebration-audio');
+        if (hiddenInput) {
+          hiddenInput.blur(); // Hide mobile keyboard
+        }
+        audioEl.currentTime = 0; // restart from beginning
+        audioEl.play().catch(err => console.error('Audio play error:', err));
+      } else {
+        console.warn('Confetti function not loaded yet!');
+      }
+    }
+    // Show popup when unit is completed
+    function showCompletionPopup() {
+      const popup = document.getElementById('completed-popup');
+      const nextChapterBtn = document.getElementById('next-chapter-btn');
+      const stayHereBtn = document.getElementById('stay-here-btn');
+      const popupMessage = document.querySelector('.popup-content h3');
+      const chapters = getAvailableChapters();
+      const lastChapter = Math.max(...chapters);
+      if (isLastChapter(currentChapter)) {
+        popupMessage.textContent = 'Course Completed! 🎉';
+        nextChapterBtn.textContent = 'Restart Course';
+        nextChapterBtn.onclick = restartEntireCourse;
+        showCelebration();
+      } else {
+        popupMessage.textContent = `Unit Completed!`;
+        nextChapterBtn.textContent = `Continue to the Next Unit`;
+        showCelebration();
+        nextChapterBtn.onclick = function() {
+          loadNextChapter();
+          popup.style.display = 'none';
+        };
+        stayHereBtn.style.display = 'inline-block'; // Show stay here button
+        stayHereBtn.onclick = function() {
+          popup.style.display = 'none';
+          loadChapter(currentChapter); // reload current chapter (make sure you have this function)
+        };
+      }
+      popup.style.display = 'flex';
+    }
+    // Modify your endGame function to show the popup
+    function endGame() {
+      gameActive = false;
+      progressFill.style.width = '100%';
+      // Show completion popup first
+      showCompletionPopup();
+      // Then show the final screen if it's truly the end
+      const availableChapters = [
+        ...new Set(
+          vocabularyData
+          .map((item) => item.chapter)
+          .filter((ch) => ch !== undefined),
+        ),
+      ].sort((a, b) => a - b);
+      const maxChapter = Math.max(...availableChapters);
+      if (currentChapter >= maxChapter) {
+        finalScore.textContent = correctAnswers;
+        totalTerms.textContent = currentTerms.length;
+      }
+      document.removeEventListener('keydown', handleKeyDown);
+    }
+    // Event Listeners
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize the app - this will handle everything
+      initializeApp();
+      // Other global event listeners (not related to dropdown)
+      submitBtn.addEventListener('click', checkAnswer);
+      clearBtn.addEventListener('click', clearAllBlanks);
+      // Confetti cleanup
+      if (window.confetti) {
+        window.confetti.reset();
+      }
+    });
+    // Other event listeners
+    // Close popup when clicking the close button
+    document.addEventListener('click', function(e) {
+      if (e.target.classList.contains('popup-close-btn')) {
+        const popup = document.querySelector('.completed-popup');
+        if (popup) popup.style.display = 'none';
+      }
+    });
+    submitBtn.addEventListener('click', checkAnswer);
+    clearBtn.addEventListener('click', clearAllBlanks);
+  </script>
+</body>
+
+</html>
