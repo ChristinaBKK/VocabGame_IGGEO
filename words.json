@@ -1,2066 +1,2479 @@
 [
   {
     "Unit.Chapter":"1.1.1 River Characteristics",
+    "Date":null,
     "Key Term":"drainage basin",
     "Explanation":"The area of land drained by a river system."
   },
   {
     "Unit.Chapter":"1.1.1 River Characteristics",
+    "Date":null,
     "Key Term":"watershed",
     "Explanation":"A ridge of high land that forms the boundary between two drainage basins."
   },
   {
     "Unit.Chapter":"1.1.1 River Characteristics",
+    "Date":null,
     "Key Term":"source",
     "Explanation":"The origin or starting point of a river."
   },
   {
     "Unit.Chapter":"1.1.1 River Characteristics",
+    "Date":null,
     "Key Term":"mouth",
     "Explanation":"The point at which a river flows into a much larger body of water \u2013 an ocean, sea or lake."
   },
   {
     "Unit.Chapter":"1.1.1 River Characteristics",
+    "Date":null,
     "Key Term":"tributary",
     "Explanation":"A river or stream flowing into a larger river or lake."
   },
   {
     "Unit.Chapter":"1.1.1 River Characteristics",
+    "Date":null,
     "Key Term":"confluence",
     "Explanation":"The point where a tributary stream\/river joins a main river."
   },
   {
     "Unit.Chapter":"1.1.1 River Characteristics",
+    "Date":null,
     "Key Term":" river channel network",
     "Explanation":"The pattern of a main river and its tributaries within a drainage basin."
   },
   {
     "Unit.Chapter":"1.1.1 River Characteristics",
+    "Date":null,
     "Key Term":"hydraulic radius",
     "Explanation":"A measure of the efficiency of a stream\u2019s shape \u2013 that is, the crosssectional area divided by the wetted perimeter. The higher the ratio, the more efficient the stream and the smaller the frictional loss. The ideal form is semi-circular."
   },
   {
     "Unit.Chapter":"1.1.1 River Characteristics",
+    "Date":null,
     "Key Term":"wetted perimeter",
     "Explanation":"The total length of the cross-section at the interface between a channel bed and the stream water that occupies it."
   },
   {
     "Unit.Chapter":"1.1.1 River Characteristics",
+    "Date":null,
     "Key Term":"river velocity",
     "Explanation":"The speed of a river\u2019s water, measured in metres per second."
   },
   {
     "Unit.Chapter":"1.1.1 River Characteristics",
+    "Date":null,
     "Key Term":"river discharge",
     "Explanation":"The amount of water passing a specific point at a given time (the volume times the velocity). It is measured in cubic metres per second."
   },
   {
     "Unit.Chapter":"1.1.1 River Characteristics",
+    "Date":null,
     "Key Term":"channel roughness",
     "Explanation":"The frictional force of a river bed. A rough bed (with boulders, pebbles, potholes) exerts more friction than a smooth channel."
   },
   {
     "Unit.Chapter":"1.1.1 River Characteristics",
+    "Date":null,
     "Key Term":"bradshaw model",
     "Explanation":"A geographical model that suggests how a river\u2019s characteristics change from the source to the mouth of the river."
   },
   {
     "Unit.Chapter":"1.1.1 River Characteristics",
+    "Date":null,
     "Key Term":"drainage density",
     "Explanation":"The total length of all the streams and rivers in a drainage basin divided by the total area of the drainage basin."
   },
   {
     "Unit.Chapter":"1.1.1 River Characteristics",
+    "Date":null,
     "Key Term":"long profile",
     "Explanation":"A longitudinal section of the course of a river drawn along the river from source to mouth."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"groundwater flow",
     "Explanation":"The flow of water through permeable rock."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"throughflow",
     "Explanation":"The flow of water through the soil under gravity."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"overland flow",
     "Explanation":"Water flowing over the surface under the influence of gravity. It occurs when the soil is saturated."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"closed system",
     "Explanation":"A system unconnected to other entities. It has no inputs from, or outputs to, elsewhere."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"hydrological cycle",
     "Explanation":"The movement of water between air, land and sea."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"stores",
     "Explanation":"The spaces in and on earth which hold water across all its states of matter."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"aquifer",
     "Explanation":"A rock that allows water to move through it, such as a layer of sandstone."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"water transfers",
     "Explanation":"The movement of water between stores in the hydrological cycle."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"evaporation",
     "Explanation":"The process in which a liquid turns to a vapour."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"condensation",
     "Explanation":"The process by which water vapour changes into water droplets."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"precipitation",
     "Explanation":"Water that falls to the Earth from the atmosphere. It is part of the hydrological cycle. Forms include rain, snow, sleet, hail, dew and frost."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"direct channel precipitation",
     "Explanation":"Rainfall and snow falling directly into a river or stream."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"channel flow",
     "Explanation":"The movement of water within the river channel."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"saturated",
     "Explanation":"When the soil is so full of water that it cannot absorb any more."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"infiltration",
     "Explanation":"The initial movement of water from the surface into the upper level of the soil."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"percolation",
     "Explanation":"The downward, vertical movement of water within soil or rock."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"permeable",
     "Explanation":"Surfaces that allow water to pass through, either due to porosity (large volume of pore spaces) or due to being pervious (having joints and cracks\/fissures)."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"impermeable",
     "Explanation":"Surfaces that do not allow water to pass through."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"water table",
     "Explanation":"The upper level of groundwater saturation in permeable rocks."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"groundwater",
     "Explanation":"Water stored underground in a permeable rock, e.g. chalk or sandstone."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"interception",
     "Explanation":"The precipitation that is collected and stored by vegetation."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"transpiration",
     "Explanation":"The loss of moisture from vegetation into the atmosphere."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"evapotranspiration",
     "Explanation":"A combination of the processes of evaporation and transpiration."
   },
   {
     "Unit.Chapter":"1.1.2 Hydrological Cycle",
+    "Date":null,
     "Key Term":"deserts",
     "Explanation":"A dry area with limited vegetation. They can be either hot or cold. Characteristics common to all these regions include irregular rainfall of less than 250 mm per year."
   },
   {
     "Unit.Chapter":"1.1.3 River Processes",
+    "Date":null,
     "Key Term":"friction",
     "Explanation":"The resistance encountered when one body moves relative to another body with which it is in contact."
   },
   {
     "Unit.Chapter":"1.1.3 River Processes",
+    "Date":null,
     "Key Term":"hydraulic action",
     "Explanation":"The erosive force exerted by water alone, such as the sheer force of river water removing loose material from the bed and banks of the river. It is particularly effective on jointed rocks, especially during storm conditions."
   },
   {
     "Unit.Chapter":"1.1.3 River Processes",
+    "Date":null,
     "Key Term":"abrasion (corasion)",
     "Explanation":"The wearing away of the river bed and banks by the river\u2019s load hitting them repeatedly."
   },
   {
     "Unit.Chapter":"1.1.3 River Processes",
+    "Date":null,
     "Key Term":"attrition",
     "Explanation":"The process by which particles of rock being transported by a river are rounded and become smaller in size by being struck against one another. Particles near the shoreline become smaller and more rounded due to more frequent attrition."
   },
   {
     "Unit.Chapter":"1.1.3 River Processes",
+    "Date":null,
     "Key Term":"solution",
     "Explanation":"The process by which the minerals in a rock, notably calcium ions, are dissolved in acid water. Solution is one of the processes of erosion."
   },
   {
     "Unit.Chapter":"1.1.3 River Processes",
+    "Date":null,
     "Key Term":"vertical erosion",
     "Explanation":"Downward erosion occurring in the upper course of the river, where the river cuts down into its bed, deepening the valley."
   },
   {
     "Unit.Chapter":"1.1.3 River Processes",
+    "Date":null,
     "Key Term":"lateral erosion",
     "Explanation":"Sideways erosion of a river bank that results in its valley getting wider."
   },
   {
     "Unit.Chapter":"1.1.3 River Processes",
+    "Date":null,
     "Key Term":"load",
     "Explanation":"The particles of sediment and dissolved matter carried along by a river."
   },
   {
     "Unit.Chapter":"1.1.3 River Processes",
+    "Date":null,
     "Key Term":"suspension",
     "Explanation":"When the smallest and lightest particles of a river\u2019s load (silt and clay) are carried in suspension by the moving water."
   },
   {
     "Unit.Chapter":"1.1.3 River Processes",
+    "Date":null,
     "Key Term":"saltation",
     "Explanation":"When larger particles of a river\u2019s load (sand, gravel, very small stones) are transported in a series of \u2018hops\u2019 or bounces along the river bed. It is the means by which bedload (material that is too heavy to be carried in suspension) is transported downstream."
   },
   {
     "Unit.Chapter":"1.1.3 River Processes",
+    "Date":null,
     "Key Term":"traction",
     "Explanation":"The sliding or rolling of sediment along the river bed or sea floor."
   },
   {
     "Unit.Chapter":"1.1.3 River Processes",
+    "Date":null,
     "Key Term":"deposition",
     "Explanation":"The laying down of material carried by rivers or the sea because of a reduction of velocity or discharge (both causing a loss of energy), often caused by increased friction with vegetation or coarse particles."
   },
   {
     "Unit.Chapter":"1.1.3 River Processes",
+    "Date":null,
     "Key Term":"bedload",
     "Explanation":"Material rolled along the river bed."
   },
   {
     "Unit.Chapter":"1.1.3 River Processes",
+    "Date":null,
     "Key Term":"alluvium",
     "Explanation":"Material deposited by rivers in a channel or on a floodplain."
   },
   {
     "Unit.Chapter":"1.1.3 River Processes",
+    "Date":null,
     "Key Term":" river transportation",
     "Explanation":"The movement of a river\u2019s load by the processes of traction, saltation, suspension and solution."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"V-shaped valley",
     "Explanation":"Rivers in upland areas contain large boulders that can erode the bed rapidly when the river is in flood. This results in the river cutting downward into its bed by vertical erosion to form steep V-shaped valleys."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"interlocking spurs",
     "Explanation":"Projecting areas of high ground in the upper course of a river that interlink."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"potholes",
     "Explanation":"A circular depression in a river bed formed by the abrasive action of rock particles caught up in vortices in turbulent river flow."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"waterfalls",
     "Explanation":"A steep fall of river water where its course is suddenly and significantly interrupted."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"gorge",
     "Explanation":"A narrow, steep-sided valley that may or may not have a river at the bottom."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"rapids",
     "Explanation":"Where very thin alternating bands of hard and soft rock cross the course of a river, creating an uneven river bed and a zone of turbulent water."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"plunge pool",
     "Explanation":"A pothole which forms at the base of a waterfall due to erosion."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"meander",
     "Explanation":"A winding turn in river channel. It is found in the lower course along the long profile."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"river cliff",
     "Explanation":"A steep slope that may be found on the outer bend of a meander."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"slip-off slope",
     "Explanation":"The gentle slope found on the inside bank of a river meander."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"meander neck",
     "Explanation":"A thin piece of land between two successive outer bank meanders, likely to be eroded in the future to form an oxbow lake."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"oxbow lake",
     "Explanation":"A curved lake found on the floodplain of a river. Oxbows are caused by the loops of meanders being cut off at times of flood and the river subsequently adopting a shorter course."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"floodplain",
     "Explanation":"The area of periodic flooding along the course of a river valley."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"braiding",
     "Explanation":"The sub-division of a river into several channels, caused by deposition of sediment as small islands in the main channel."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"delta",
     "Explanation":"A flat, low-lying deposit of sediment that is found at a river\u2019s mouth."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"river capacity",
     "Explanation":"The total amount of sediment a river can carry."
   },
   {
     "Unit.Chapter":"1.2 River Landforms",
+    "Date":null,
     "Key Term":"river competence",
     "Explanation":"The maximum size of particle a river can carry."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"flood",
     "Explanation":"A discharge great enough to cause a body of water to overflow its channel and submerge the surrounding area."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"flash floods",
     "Explanation":"A large but temporary increase in channel discharge."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"drought",
     "Explanation":"An extended period of dry weather leading to conditions of extreme dryness. An absolute one is a period of at least 15 consecutive days with less than 0.2 mm of rainfall. A partial one is a period of at least 29 consecutive days during which the average daily rainfall does not exceed 0.2 mm."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"deforestation",
     "Explanation":"The removal of forest cover or destruction of forest for timber, fuel or charcoal burning, or clearing for agriculture and extractive industries such as mining. It can be complete or partial. It causes fertile soil to be blown away or washed into rivers, leading to soil erosion, drought, flooding and loss of wildlife."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"water treatment",
     "Explanation":"Improving water quality to make it acceptable for a particular end use, such as human consumption or irrigation."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"wellfields",
     "Explanation":"The land above and surrounding wells drilled into an aquifer."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"US Geological Survey",
     "Explanation":"A United States scientific agency that studies the landscape of the USA, its natural resources, and the natural hazards that threaten it."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"hard engineering",
     "Explanation":"Any coastal or river protection scheme that involves altering the natural environment with concrete, stone, steel, metal, etc. \u2013 for example the use of sea walls, gabions, groynes and revetments. Artificial structures are built in order to protect the natural environment from erosion."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"soft engineering",
     "Explanation":"Any form of coastal or river protection that involves the use of natural means, e.g. sand dunes, saltmarshes, tree planting and\/or beach replenishment."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"flood abatement",
     "Explanation":"Reducing the amount of runoff in a drainage basin through actions such as preservation of natural water stores."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"overgrazing",
     "Explanation":"The grazing of natural pastures at stocking intensities above the livestock carrying capacity."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"flood diversion",
     "Explanation":"The practice of allowing certain areas, such as wetlands and floodplains, to be flooded to a greater extent."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"Land-use zoning",
     "Explanation":"The segregation of land use into different areas for each type of use."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"catchment management",
     "Explanation":"The regulations and policies that govern the oversight of surface and groundwater resources within the area of a river catchment."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"sustainable drainage systems",
     "Explanation":"A natural drainage method for the drainage of surface water to nearby watercourses in urban areas in particular."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"water quality",
     "Explanation":"The suitability of water to sustain various uses or processes. Any use will have certain requirements for the physical, chemical or biological characteristics of the water."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"pollution",
     "Explanation":"Contamination of the environment."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"greenhouse gases",
     "Explanation":"These substances allow short-wave radiation to pass through the atmosphere and reach the Earth\u2019s surface, but they absorb some of the outgoing long-wave radiation thereby heating the Earth\u2019s atmosphere."
   },
   {
     "Unit.Chapter":"1.3 River Hazards and Opportunities",
+    "Date":null,
     "Key Term":"eutrophication",
     "Explanation":"The depletion of oxygen from water in streams and rivers due to increased levels of nitrates (from fertilisers) or phosphates (from detergents)."
   },
   {
     "Unit.Chapter":"2.1 Coastal Processes",
+    "Date":null,
     "Key Term":"sea level",
     "Explanation":"An average level of the sea, between the high water mark and low water mark."
   },
   {
     "Unit.Chapter":"2.1 Coastal Processes",
+    "Date":null,
     "Key Term":"waves",
     "Explanation":"The circular or elliptical movement of water near the surface of the sea."
   },
   {
     "Unit.Chapter":"2.1 Coastal Processes",
+    "Date":null,
     "Key Term":"groynes",
     "Explanation":"A wooden or concrete barrier built at right angles to a beach in order to block the movement of material along the beach by longshore drift."
   },
   {
     "Unit.Chapter":"2.1 Coastal Processes",
+    "Date":null,
     "Key Term":"longshore drift",
     "Explanation":"The movement of material along a beach by wave action. When a wave breaks obliquely (at an angle to the beach), pebbles are carried up the beach in the direction of the wave (swash). The wave returns to the sea (backwash) at right angles to the beach (direction of steepest slope), carrying material with it."
   },
   {
     "Unit.Chapter":"2.1 Coastal Processes",
+    "Date":null,
     "Key Term":"swash",
     "Explanation":"The movement of material up the beach in the direction of the prevailing wind."
   },
   {
     "Unit.Chapter":"2.1 Coastal Processes",
+    "Date":null,
     "Key Term":"backwash",
     "Explanation":"The movement of water back down the beach due to the effect of gravity."
   },
   {
     "Unit.Chapter":"2.1 Coastal Processes",
+    "Date":null,
     "Key Term":"fetch",
     "Explanation":"The distance of open water over which wind can blow to create waves. The greater the fetch, the more potential power waves have when they hit the coast."
   },
   {
     "Unit.Chapter":"2.1 Coastal Processes",
+    "Date":null,
     "Key Term":"constructive waves",
     "Explanation":"A wave with a long wave length and a low height. These waves help to build up beaches by deposition."
   },
   {
     "Unit.Chapter":"2.1 Coastal Processes",
+    "Date":null,
     "Key Term":"destructive waves",
     "Explanation":"A wave with a high height and a short wave length, which helps erode beach materials and cliffs."
   },
   {
     "Unit.Chapter":"2.1 Coastal Processes",
+    "Date":null,
     "Key Term":"wave refraction",
     "Explanation":"The way in which a wave changes shape and loses speed as it comes into contact with the sea bed. If refraction is complete, waves break parallel to the coastline. If refraction is not complete, longshore drift occurs."
   },
   {
     "Unit.Chapter":"2.2 Coastal Landforms",
+    "Date":null,
     "Key Term":"headlands",
     "Explanation":"A point of land projecting into the sea; also known as a cape or a promontory."
   },
   {
     "Unit.Chapter":"2.2 Coastal Landforms",
+    "Date":null,
     "Key Term":"bays",
     "Explanation":"A wide, open, curving indentation of the sea."
   },
   {
     "Unit.Chapter":"2.2 Coastal Landforms",
+    "Date":null,
     "Key Term":"wave-cut platform",
     "Explanation":"A gently sloping rock surface found at the base of a coastal cliff. It is covered by water at high tide but is exposed at low tide. It is formed by the erosion (by waves) of a former cliff face."
   },
   {
     "Unit.Chapter":"2.2 Coastal Landforms",
+    "Date":null,
     "Key Term":"bar",
     "Explanation":"A depositional feature \u2013 a long ridge of sand or pebbles running parallel to a coastline that is submerged at high tide. Some develop offshore when waves disturb sediments on the sea bed and form them into a submarine ridge, while others form from the development of a spit across the whole of a small bay."
   },
   {
     "Unit.Chapter":"2.2 Coastal Landforms",
+    "Date":null,
     "Key Term":"lagoon",
     "Explanation":"A coastal body of shallow saltwater, usually with limited access to the sea. The term is normally used to describe a shallow sea area cut off by a coral reef or a bar."
   },
   {
     "Unit.Chapter":"2.2 Coastal Landforms",
+    "Date":null,
     "Key Term":"spit",
     "Explanation":"A ridge of sand or shingle connected to the land at one end and the open sea at the other end. It is formed by the interruption of longshore drift due to wave refraction, river currents, secondary winds and\/or changes in the shape of the coastline."
   },
   {
     "Unit.Chapter":"2.2 Coastal Landforms",
+    "Date":null,
     "Key Term":"tombolo",
     "Explanation":"A bar or ridge that links an island to the mainland."
   },
   {
     "Unit.Chapter":"2.2 Coastal Landforms",
+    "Date":null,
     "Key Term":"sand dune",
     "Explanation":"A mound or ridge of wind-drifted sand common on coasts and in deserts. In coastal areas, sand is trapped by vegetation, notably sea couch grass and marram grass, to form stable them."
   },
   {
     "Unit.Chapter":"2.2 Coastal Landforms",
+    "Date":null,
     "Key Term":"concordant coastlines",
     "Explanation":"A relatively straight coastline in which the relief and geology are parallel to the coast."
   },
   {
     "Unit.Chapter":"2.2 Coastal Landforms",
+    "Date":null,
     "Key Term":"discordant coastlines",
     "Explanation":"A coastline in which the relief and geology are at right angles to the coastline."
   },
   {
     "Unit.Chapter":"2.3 Coastal Opportunities and Hazards",
+    "Date":null,
     "Key Term":"natural hazards",
     "Explanation":"A natural event that puts people, property and livelihoods at risk."
   },
   {
     "Unit.Chapter":"2.3 Coastal Opportunities and Hazards",
+    "Date":null,
     "Key Term":"tropical cyclone (hurricane, typhoon)",
     "Explanation":"A region of very low atmospheric pressure in tropical regions. These storms cause large amounts of damage annually."
   },
   {
     "Unit.Chapter":"2.3 Coastal Opportunities and Hazards",
+    "Date":null,
     "Key Term":"tsunamis",
     "Explanation":"A large and unusual wave in the water generated by a submarine earthquake, volcanic eruption or landslide."
   },
   {
     "Unit.Chapter":"2.3 Coastal Opportunities and Hazards",
+    "Date":null,
     "Key Term":"coastal management strategy",
     "Explanation":"measure taken to prevent coastal erosion and\/or flooding. To reduce erosion, several different forms of coastal protection are used. These can be divided into hard engineering and soft engineering."
   },
   {
     "Unit.Chapter":"2.3 Coastal Opportunities and Hazards",
+    "Date":null,
     "Key Term":"coastal erosion",
     "Explanation":"The wearing away of coastlines by moving agents, such as waves and wind, to create coastal features such as cliffs and wave-cut platforms."
   },
   {
     "Unit.Chapter":"2.3 Coastal Opportunities and Hazards",
+    "Date":null,
     "Key Term":"do nothing",
     "Explanation":"A form of managing natural processes that involves taking no action but allowing natural processes to operate without any human intervention."
   },
   {
     "Unit.Chapter":"2.3 Coastal Opportunities and Hazards",
+    "Date":null,
     "Key Term":"managed retreat",
     "Explanation":"When the coastline is allowed to retreat (erode) in certain areas where the population density or the value of land is low, so that nature takes its course."
   },
   {
     "Unit.Chapter":"2.3 Coastal Opportunities and Hazards",
+    "Date":null,
     "Key Term":"Saffir-Simpson Scale",
     "Explanation":"A scale to measure the intensity, windspeed and likely damage caused by tropical cyclones."
   },
   {
     "Unit.Chapter":"2.3 Coastal Opportunities and Hazards",
+    "Date":null,
     "Key Term":"coral",
     "Explanation":"Living organisms that may form large reefs. They provide a habitat for a wide diversity of living organisms."
   },
   {
     "Unit.Chapter":"2.3 Coastal Opportunities and Hazards",
+    "Date":null,
     "Key Term":"mangroves",
     "Explanation":"A salt-tolerant forest of trees and shrubs that grows in the tidal estuaries and coastal zones of tropical areas."
   },
   {
     "Unit.Chapter":"2.3 Coastal Opportunities and Hazards",
+    "Date":null,
     "Key Term":"sequester",
     "Explanation":"To capture and remove CO2 from the Earth\u2019s atmosphere and to store it permanently."
   },
   {
     "Unit.Chapter":"2.3 Coastal Opportunities and Hazards",
+    "Date":null,
     "Key Term":"marine protected area",
     "Explanation":"An area of coastline or ocean that is given some form of protection or conservation, e.g. activities such as fishing, mining or drilling may be banned or restricted."
   },
   {
     "Unit.Chapter":"3.1 Antarctic Ecosystem",
+    "Date":null,
     "Key Term":"air pressure",
     "Explanation":"The pressure at any point on the Earth\u2019s surface that is due to the weight of the air above it; it decreases as altitude increases."
   },
   {
     "Unit.Chapter":"3.1 Antarctic Ecosystem",
+    "Date":null,
     "Key Term":"rainfall",
     "Explanation":"A form of precipitation in which drops of water fall to the Earth\u2019s surface from clouds. The drops are formed by the accumulation of fine droplets that condense from water vapour in the air. The condensation is usually brought about by the rising and subsequent cooling of air."
   },
   {
     "Unit.Chapter":"3.1 Antarctic Ecosystem",
+    "Date":null,
     "Key Term":"cloud",
     "Explanation":"Water vapour condensed into minute water particles that float in the atmosphere. They are formed by the cooling of air containing water vapour, which generally condenses around tiny dust or ice particles."
   },
   {
     "Unit.Chapter":"3.1 Antarctic Ecosystem",
+    "Date":null,
     "Key Term":"albedo",
     "Explanation":"The reflectivity of a surface \u2013 snow and ice are very reflective, whereas dark surfaces, such as soil, are not."
   },
   {
     "Unit.Chapter":"3.1 Antarctic Ecosystem",
+    "Date":null,
     "Key Term":"altitude",
     "Explanation":"Measurement of height, usually given in metres above sea level. Temperature\ndeclines, on average, 1\u00b0C for every 100 m"
   },
   {
     "Unit.Chapter":"3.1 Antarctic Ecosystem",
+    "Date":null,
     "Key Term":"soils",
     "Explanation":"The outermost layer of the Earth\u2019s solid surface, consisting of weathered rock, air, water and decaying organic matter overlying the bedrock. It comprises minerals, organic matter (humus) derived from decomposed plants and organisms, living organisms, air and water."
   },
   {
     "Unit.Chapter":"3.1 Antarctic Ecosystem",
+    "Date":null,
     "Key Term":"ecosystems",
     "Explanation":"An integrated unit consisting of a community of living organisms (animals and plants) and the physical environment (air, soil, water and climate) that they inhabit. Individual organisms interact with each other and with their habitat."
   },
   {
     "Unit.Chapter":"3.2 Antarctica Threats and Management",
+    "Date":null,
     "Key Term":"conservation of living resources",
     "Explanation":"The management of the human use of natural resources to provide the maximum benefit to current generations while maintaining capacity to meet the needs of future generations."
   },
   {
     "Unit.Chapter":"3.2 Antarctica Threats and Management",
+    "Date":null,
     "Key Term":"environmental impact survey",
     "Explanation":"A document required by law detailing all the impacts on the environment of a construction project above a certain size."
   },
   {
     "Unit.Chapter":"3.2 Antarctica Threats and Management",
+    "Date":null,
     "Key Term":"do minimum",
     "Explanation":"A form of managing natural processes that involves very limited human intervention but may aim at protecting human lives."
   },
   {
     "Unit.Chapter":"3.3 Tropical Rainforest Ecosystem",
+    "Date":null,
     "Key Term":"tropical rainforests",
     "Explanation":"Dense forest usually found on or near the equator, where the climate is hot and wet. The vegetation in these regions typically includes a canopy formed by high branches of tall trees that provides shade for lower layers, an intermediate layer of shorter trees, tree roots and lianas, and a ground cover of mosses and ferns."
   },
   {
     "Unit.Chapter":"3.3 Tropical Rainforest Ecosystem",
+    "Date":null,
     "Key Term":"convectional rains",
     "Explanation":"Rainfall associated with hot climates, resulting from the rising of currents of warm air. Air that has been warmed by the extreme heating of the ground surface rises to great heights and is cooled quickly. The water vapour carried by the air condenses and rain falls heavily."
   },
   {
     "Unit.Chapter":"3.3 Tropical Rainforest Ecosystem",
+    "Date":null,
     "Key Term":"humidity",
     "Explanation":"The quantity of water vapour in a given volume of air, or the ratio of the amount of water vapour in the atmosphere to the maximum amount the air can hold. At dew point the relative humidity is 100 per cent and the air is said to be saturated. Condensation (the conversion of vapour to liquid) may then occur."
   },
   {
     "Unit.Chapter":"3.3 Tropical Rainforest Ecosystem",
+    "Date":null,
     "Key Term":"biodiversity",
     "Explanation":"A measure of the variety of the Earth\u2019s plant and animal species, of genetic differences within species, and of the ecosystems that support those species."
   },
   {
     "Unit.Chapter":"3.4 Tropical Rainforest Threats and Management",
+    "Date":null,
     "Key Term":"plantations",
     "Explanation":"A large farm or estate where one crop is produced commercially, such as palm oil in Malaysia or tea in Sri Lanka."
   },
   {
     "Unit.Chapter":"3.4 Tropical Rainforest Threats and Management",
+    "Date":null,
     "Key Term":"biofuels",
     "Explanation":"Any fuel produced from organic matter, either directly from plants or indirectly from industrial, commercial, domestic or agricultural wastes. For example fossil fuel substitute can be made from a range of crops, including oilseeds, wheat and sugar."
   },
   {
     "Unit.Chapter":"3.4 Tropical Rainforest Threats and Management",
+    "Date":null,
     "Key Term":"nutrient cycling",
     "Explanation":"The re-use of nutrients over time. They are recycled between the atmosphere, plants, animals and the soil."
   },
   {
     "Unit.Chapter":"3.4 Tropical Rainforest Threats and Management",
+    "Date":null,
     "Key Term":"soil erosion",
     "Explanation":"The wearing away and redistribution of the Earth\u2019s soil. It is caused by the action of water, wind and ice, and also by unsustainable methods of agriculture."
   },
   {
     "Unit.Chapter":"3.4 Tropical Rainforest Threats and Management",
+    "Date":null,
     "Key Term":"flood peak",
     "Explanation":"The highest discharge of a river flood."
   },
   {
     "Unit.Chapter":"3.4 Tropical Rainforest Threats and Management",
+    "Date":null,
     "Key Term":"climate",
     "Explanation":"The combination of weather conditions at a particular place over a period of time \u2013 usually a minimum of 30 years."
   },
   {
     "Unit.Chapter":"4.1 Earth's Structure",
+    "Date":null,
     "Key Term":"magma",
     "Explanation":"Molten or semi-molten material found beneath the Earth\u2019s surface."
   },
   {
     "Unit.Chapter":"4.1 Earth's Structure",
+    "Date":null,
     "Key Term":"divergent\/constructive boundaries",
     "Explanation":"A plate boundary where new material is created and two plates move away from each other, e.g. the North American and European Plates moving away from the Mid-Atlantic Ridge."
   },
   {
     "Unit.Chapter":"4.1 Earth's Structure",
+    "Date":null,
     "Key Term":"convergent\/destructive boundaries",
     "Explanation":"A plate boundary where two plates meet and the denser oceanic plate subducts\/plunges underneath the less dense continental plate. They are associated with creating ocean trenches and fold mountains."
   },
   {
     "Unit.Chapter":"4.1 Earth's Structure",
+    "Date":null,
     "Key Term":"convergent\/collision boundaries",
     "Explanation":"A plate boundary where two plates meet. It may lead to the creation of fold mountains, e.g. the Himalayas."
   },
   {
     "Unit.Chapter":"4.1 Earth's Structure",
+    "Date":null,
     "Key Term":"conservative\/transform boundaries",
     "Explanation":"A plate boundary in which plates move past each other in different directions or at different speeds but no material is destroyed or created. They are associated with earthquake activity."
   },
   {
     "Unit.Chapter":"4.1 Earth's Structure",
+    "Date":null,
     "Key Term":"sea floor spreading",
     "Explanation":"The gradual increase in the size of the oceans as new material is added to the oceans at constructive plate boundaries\/mid-ocean ridges."
   },
   {
     "Unit.Chapter":"4.2.1 Earthquake Processes",
+    "Date":null,
     "Key Term":"focus",
     "Explanation":"The exact point within or on the Earth\u2019s surface where an earthquake occurs."
   },
   {
     "Unit.Chapter":"4.2.1 Earthquake Processes",
+    "Date":null,
     "Key Term":"deep-focus earthquakes",
     "Explanation":"An earthquake that occurs at a depth of over 70 km beneath the Earth\u2019s surface."
   },
   {
     "Unit.Chapter":"4.2.1 Earthquake Processes",
+    "Date":null,
     "Key Term":"subduction zone",
     "Explanation":"An area where a dense oceanic plate plunges underneath a less-dense continental plate."
   },
   {
     "Unit.Chapter":"4.2.1 Earthquake Processes",
+    "Date":null,
     "Key Term":"shallow-focus earthquakes",
     "Explanation":"An earthquake that occurs up to a depth of 70 km."
   },
   {
     "Unit.Chapter":"4.2.1 Earthquake Processes",
+    "Date":null,
     "Key Term":"epicentre",
     "Explanation":"The point on the Earth\u2019s surface immediately above an earthquake\u2019s focus."
   },
   {
     "Unit.Chapter":"4.2.1 Earthquake Processes",
+    "Date":null,
     "Key Term":"seismic waves",
     "Explanation":"A wave-like motion through the Earth caused by an earthquake, volcanic eruption or landslide."
   },
   {
     "Unit.Chapter":"4.2.1 Earthquake Processes",
+    "Date":null,
     "Key Term":"body waves",
     "Explanation":"A seismic wave that travels through the Earth\u2019s interior."
   },
   {
     "Unit.Chapter":"4.2.1 Earthquake Processes",
+    "Date":null,
     "Key Term":"surface waves",
     "Explanation":"A seismic wave at the Earth\u2019s surface. Love waves cause the ground to move sideways, and Rayleigh waves cause the ground to move up and down."
   },
   {
     "Unit.Chapter":"4.2.1 Earthquake Processes",
+    "Date":null,
     "Key Term":"primary waves",
     "Explanation":"The fastest type of seismic wave, which causes the ground to shake."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"secondary waves",
     "Explanation":"A secondary or shear wave is a seismic wave that travels through solids, with an undulating\/wavelike movement (up and down)."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"pyroclastic flow",
     "Explanation":"A superheated cloud of volcanic ash, cinder, tephra and other fragments. It can reach temperatures of over 700\u00b0C and is capable of travelling at speeds of over 500 km\/hour."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"lahar",
     "Explanation":"A mudflow consisting of volcanic ash, rain and\/or snow."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"shield volcano",
     "Explanation":"A low-angle volcano formed of very hot, runny, basaltic lava."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"cinder cone volcano",
     "Explanation":"A steep-sided volcano made of fragments of volcanic materials."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"stratovolcano (composite cone volcano)",
     "Explanation":"A cone-shaped volcano formed of viscous, sticky lava."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"active volcano",
     "Explanation":"A volcano that is currently erupting or has recently erupted and is likely to erupt again."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"dormant volcano",
     "Explanation":"A volcano that has not erupted for a long time, but could erupt in the future."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"extinct volcano",
     "Explanation":"A volcano that erupted in the past but will not erupt in the future."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"crater",
     "Explanation":"A bowl-shaped depression at the summit of a volcano, formed by a volcanic eruption."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"vent",
     "Explanation":"A fracture on the summit of a volcano through which lava can be ejected."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"magma chamber",
     "Explanation":"An underground reservoir of molten magma."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"secondary cone",
     "Explanation":"A smaller cone found on the side of a volcano\u2019s main cone."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"lava flows",
     "Explanation":"A slow-moving flow of molten lava, typically moving at 1\u201310 km\/hour and with temperatures of over 700\u00b0C."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"tephra",
     "Explanation":"All volcanic fragments ejected into the air during an eruption."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"ash falls",
     "Explanation":"Very small, hard, jagged material of volcanic origin. It is the most frequent and widespread volcanic hazard."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"volcanic block",
     "Explanation":"A fragment of rock measuring over 64 mm in diameter that is erupted in a solid condition."
   },
   {
     "Unit.Chapter":"4.2.2 Volcano Processes",
+    "Date":null,
     "Key Term":"volcanic gas",
     "Explanation":"A gas given off by an active volcano, including water vapour, carbon dioxide, sulphur dioxide, hydrogen sulphide, nitrogen, methane and carbon monoxide."
   },
   {
     "Unit.Chapter":"4.3 Tectonic hazard Impacts",
+    "Date":null,
     "Key Term":"Richter Scale",
     "Explanation":"A scale to measure the magnitude of an earthquake. The scale is logarithmic, so an earthquake of 5.0 magnitude is ten times greater than one of 4.0 magnitude."
   },
   {
     "Unit.Chapter":"4.3 Tectonic hazard Impacts",
+    "Date":null,
     "Key Term":"Mercalli Scale",
     "Explanation":"A scale that measures the effects of an earthquake based on its intensity of shaking and the observed damage."
   },
   {
     "Unit.Chapter":"4.3 Tectonic hazard Impacts",
+    "Date":null,
     "Key Term":"Moment Magnitude Scale",
     "Explanation":"A scale that measures the amount of energy released by an earthquake."
   },
   {
     "Unit.Chapter":"4.3 Tectonic hazard Impacts",
+    "Date":null,
     "Key Term":"Volcanic Explosivity Index",
     "Explanation":"A measure of the amount of volcanic material ejected in an eruption, the height the material is thrown into the atmosphere, and how long the eruption lasts. The scale is logarithmic, so a VEI 6.0 is ten times greater than a VEI 5.0."
   },
   {
     "Unit.Chapter":"4.3 Tectonic hazard Impacts",
+    "Date":null,
     "Key Term":"supervolcano",
     "Explanation":"A volcano with a Volcanic Explosivity Index of 8.0, i.e. an eruption of over 1000 km3."
   },
   {
     "Unit.Chapter":"5.1 Causes of Climate Change",
+    "Date":null,
     "Key Term":"steric effect",
     "Explanation":"The expansion of sea water as its temperature increases."
   },
   {
     "Unit.Chapter":"5.1 Causes of Climate Change",
+    "Date":null,
     "Key Term":"Pleistocene",
     "Explanation":"The geological era lasting from about 2.6 million years ago to around 11,700 years ago, characterised by multiple glacial (cold) periods and interglacial (warm) periods."
   },
   {
     "Unit.Chapter":"5.1 Causes of Climate Change",
+    "Date":null,
     "Key Term":"Holocene",
     "Explanation":"The most recent geological epoch, beginning 11,700 years ago."
   },
   {
     "Unit.Chapter":"5.1 Causes of Climate Change",
+    "Date":null,
     "Key Term":"interglacial period",
     "Explanation":"The warm phase during an ice age, i.e. when ice sheets and glaciers retreat."
   },
   {
     "Unit.Chapter":"5.1 Causes of Climate Change",
+    "Date":null,
     "Key Term":"glacial period",
     "Explanation":"The cold phase in an ice age, i.e. when ice sheets and glaciers advance."
   },
   {
     "Unit.Chapter":"5.1 Causes of Climate Change",
+    "Date":null,
     "Key Term":"greenhouse effect",
     "Explanation":"Some atmospheric gases, such as water vapour, carbon dioxide, methane and nitrous oxide, are greenhouse gases. This means that they allow short-wave radiation to pass through the atmosphere and reach the Earth\u2019s surface, but they absorb some of the outgoing long-wave radiation thereby heating the Earth\u2019s atmosphere. This is a natural process."
   },
   {
     "Unit.Chapter":"5.1 Causes of Climate Change",
+    "Date":null,
     "Key Term":"fossil fuels",
     "Explanation":"A non-renewable resource, such as coal, oil or natural gas, formed from the remains of prehistoric carbon compound- or hydrocarbon-containing materials."
   },
   {
     "Unit.Chapter":"5.1 Causes of Climate Change",
+    "Date":null,
     "Key Term":"agriculture",
     "Explanation":"The production of crops and livestock, aquaculture and forest products, e.g. rice, fish and cotton, for food and non-food products."
   },
   {
     "Unit.Chapter":"5.1 Causes of Climate Change",
+    "Date":null,
     "Key Term":"enhanced greenhouse effect",
     "Explanation":"The additional heat that is trapped as a result of the increased levels of greenhouse gases in the atmosphere. This is largely as a result of human activities and is causing the world climate to become hotter and more extreme."
   },
   {
     "Unit.Chapter":"5.2 Climate Change Impacts",
+    "Date":null,
     "Key Term":"tipping point",
     "Explanation":"A critical threshold when even a small change can have dramatic effects and cause a disproportionately large response."
   },
   {
     "Unit.Chapter":"5.3 Responses to Climate Change",
+    "Date":null,
     "Key Term":"United Nations Framework Convention on Climate Change",
     "Explanation":"The UN process for reaching an agreement to limit dangerous climate change. Its main objective is the stabilisation of greenhouse emissions to prevent dangerous human-caused climate change."
   },
   {
     "Unit.Chapter":"5.3 Responses to Climate Change",
+    "Date":null,
     "Key Term":"Kyoto Protocol",
     "Explanation":"An international agreement that aimed to reduce carbon dioxide emissions and the presence of atmospheric greenhouse gases."
   },
   {
     "Unit.Chapter":"5.3 Responses to Climate Change",
+    "Date":null,
     "Key Term":"Paris Agreement",
     "Explanation":"A legally binding international treaty on climate change. It was adopted by 196 Parties in 2015 and came into force in 2016. Its aim is to keep the increase in the global average temperature to well below 2\u00b0C above pre-industrial levels."
   },
   {
     "Unit.Chapter":"5.3 Responses to Climate Change",
+    "Date":null,
     "Key Term":"adaptation",
     "Explanation":"Methods of learning to live with climate change, e.g. sea walls and malaria tablets."
   },
   {
     "Unit.Chapter":"5.3 Responses to Climate Change",
+    "Date":null,
     "Key Term":"mitigation",
     "Explanation":"Measures used to prevent or limit global climate change, e.g. burning less fossil fuel and\/or planting more trees."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"carrying capacity",
     "Explanation":"The largest population that the resources of a given environment can support."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"demographers",
     "Explanation":"A person who studies human populations."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"population projections",
     "Explanation":"A prediction of the future population, usually based on current and past trends."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"child mortality rate",
     "Explanation":"The number of deaths of children under five years of age per thousand live births per year."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"population momentum",
     "Explanation":"When a country\u2019s fertility rate declines to or below the replacement level, but the population continues to grow because of its age structure."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"birth rate",
     "Explanation":"The number of live births per thousand population in a year."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"death rate",
     "Explanation":"The number of deaths per thousand population in a year."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"rate of natural change",
     "Explanation":"The difference between the birth rate and death rate. If it is positive, it is termed natural increase. If it is negative, it is known as natural decrease."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"net migration",
     "Explanation":"The difference between the numbers of immigrants and emigrants in a year."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"immigration",
     "Explanation":"The number of immigrants per thousand population entering a receiving country in a year."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"emigration",
     "Explanation":"The number of emigrants per thousand population leaving a country of origin in a year."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"fertility rate",
     "Explanation":"The number of live births per 1000 women aged 15\u201344 years in a given year."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"total fertility rate",
     "Explanation":"The average number of children born to a woman in a country during her lifetime."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"replacement level fertility",
     "Explanation":"A fertility rate of 2.1 children per woman is required to maintain a population at its current level. Below this level, a population will eventually decline."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"pro-natalist",
     "Explanation":"A policy that is encouraging and supportive of increasing the fertility rate."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"anti-natalist",
     "Explanation":"A policy that is discouraging and unsupportive of increasing fertility."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"demographic transition model",
     "Explanation":"A model illustrating the historical shift of birth and death rates from high to low levels in a population."
   },
   {
     "Unit.Chapter":"6.1 Populatin Growth and Decline",
+    "Date":null,
     "Key Term":"life expectancy at birth",
     "Explanation":"The average number of years a newborn infant can expect to live under current mortality levels."
   },
   {
     "Unit.Chapter":"6.2 Population Structure Changes",
+    "Date":null,
     "Key Term":"population structure",
     "Explanation":"The composition of a population, the most important elements of which are age and sex (gender)."
   },
   {
     "Unit.Chapter":"6.2 Population Structure Changes",
+    "Date":null,
     "Key Term":"population pyramids",
     "Explanation":"A bar chart, arranged vertically, that shows the distribution of a population by age and gender."
   },
   {
     "Unit.Chapter":"6.2 Population Structure Changes",
+    "Date":null,
     "Key Term":"dependency ratio",
     "Explanation":"The ratio of the number of people aged under 15 years and over 64 years to those in the 15\u201364 age group."
   },
   {
     "Unit.Chapter":"6.2 Population Structure Changes",
+    "Date":null,
     "Key Term":"youth dependency ratio",
     "Explanation":"The ratio of the number of people aged 0\u201314 years to those in the 15\u201364 age group."
   },
   {
     "Unit.Chapter":"6.2 Population Structure Changes",
+    "Date":null,
     "Key Term":"elderly dependency ratio",
     "Explanation":"The ratio of the number of people aged 65 and over to those in the 15\u201364 age group."
   },
   {
     "Unit.Chapter":"6.2 Population Structure Changes",
+    "Date":null,
     "Key Term":"demographic dividend",
     "Explanation":"The growth in an economy resulting from a change in the age structure of a country\u2019s population."
   },
   {
     "Unit.Chapter":"6.2 Population Structure Changes",
+    "Date":null,
     "Key Term":"demographic preparedness",
     "Explanation":"The idea that there is time to enact policies and encourage behaviours to limit the potential adverse effects of demographic changes."
   },
   {
     "Unit.Chapter":"6.3 Causes and Impacts of Migration",
+    "Date":null,
     "Key Term":"refugee",
     "Explanation":"A person who is forced to flee their home due to human or environmental factors and who crosses an international border into another country."
   },
   {
     "Unit.Chapter":"6.3 Causes and Impacts of Migration",
+    "Date":null,
     "Key Term":"internally displaced person",
     "Explanation":"A facility able to move containers between different modes of transport, with storage space for containers waiting for the next leg of the journey."
   },
   {
     "Unit.Chapter":"6.3 Causes and Impacts of Migration",
+    "Date":null,
     "Key Term":"country of origin",
     "Explanation":"The country from which a migration begins."
   },
   {
     "Unit.Chapter":"6.3 Causes and Impacts of Migration",
+    "Date":null,
     "Key Term":"country of destination",
     "Explanation":"The country where a migration is completed."
   },
   {
     "Unit.Chapter":"6.3 Causes and Impacts of Migration",
+    "Date":null,
     "Key Term":"voluntary migration",
     "Explanation":"When individuals have a free choice about whether to migrate or not."
   },
   {
     "Unit.Chapter":"6.3 Causes and Impacts of Migration",
+    "Date":null,
     "Key Term":"forced migration",
     "Explanation":"When people are made to move against their will due to human or environmental factors."
   },
   {
     "Unit.Chapter":"6.3 Causes and Impacts of Migration",
+    "Date":null,
     "Key Term":"push factor",
     "Explanation":"A negative factor at the place of origin."
   },
   {
     "Unit.Chapter":"6.3 Causes and Impacts of Migration",
+    "Date":null,
     "Key Term":"pull factor",
     "Explanation":"A positive factor at the destination."
   },
   {
     "Unit.Chapter":"6.3 Causes and Impacts of Migration",
+    "Date":null,
     "Key Term":"remittance",
     "Explanation":"Money sent back by a migrant to their family in their home community."
   },
   {
     "Unit.Chapter":"6.3 Causes and Impacts of Migration",
+    "Date":null,
     "Key Term":"diaspora",
     "Explanation":"The dispersion of a people, originally belonging to one country, around the world."
   },
   {
     "Unit.Chapter":"6.3 Causes and Impacts of Migration",
+    "Date":null,
     "Key Term":"cultural identity",
     "Explanation":"The definition of a group or individual (by themselves or others) in terms of ethnicity, nationality, language, religion and gender."
   },
   {
     "Unit.Chapter":"7.1 Where People Live",
+    "Date":null,
     "Key Term":"urbanisation",
     "Explanation":"An increase in the proportion of people living in urban areas."
   },
   {
     "Unit.Chapter":"7.1 Where People Live",
+    "Date":null,
     "Key Term":"urban growth",
     "Explanation":"The absolute growth of urban areas in population size and\/or the physical growth of urban areas."
   },
   {
     "Unit.Chapter":"7.1 Where People Live",
+    "Date":null,
     "Key Term":"least low-income countries",
     "Explanation":"The very poorest countries."
   },
   {
     "Unit.Chapter":"7.1 Where People Live",
+    "Date":null,
     "Key Term":"suburbanisation",
     "Explanation":"The growth of residential areas at the edges of urban areas; the movement of people into the suburbs (outer parts of the city)."
   },
   {
     "Unit.Chapter":"7.1 Where People Live",
+    "Date":null,
     "Key Term":"suburbs",
     "Explanation":"A residential area found towards the edge of a city and located relatively far from the central areas."
   },
   {
     "Unit.Chapter":"7.1 Where People Live",
+    "Date":null,
     "Key Term":"counterurbanisation",
     "Explanation":"The movement of people away from larger urban areas to smaller urban areas and\/or rural settlements."
   },
   {
     "Unit.Chapter":"7.1 Where People Live",
+    "Date":null,
     "Key Term":"reurbanisation",
     "Explanation":"The increase in population in the inner city of an urban area following a period of urban decline."
   },
   {
     "Unit.Chapter":"7.2 Urbanisation Opportunities and Challenges",
+    "Date":null,
     "Key Term":"decentralise",
     "Explanation":"The outward movement of economic activity from CBDs and inner cities."
   },
   {
     "Unit.Chapter":"8.1 Measuring Development",
+    "Date":null,
     "Key Term":"development",
     "Explanation":"The use of resources to improve the quality of life in a country."
   },
   {
     "Unit.Chapter":"8.1 Measuring Development",
+    "Date":null,
     "Key Term":"United Nations Development Programme",
     "Explanation":"The UN\u2019s development agency working to eradicate poverty. It plays a crucial role in helping countries achieve the Sustainable Development Goals."
   },
   {
     "Unit.Chapter":"8.1 Measuring Development",
+    "Date":null,
     "Key Term":"GNI per capita",
     "Explanation":"The total GNI of a country divided by the total population."
   },
   {
     "Unit.Chapter":"8.1 Measuring Development",
+    "Date":null,
     "Key Term":"purchasing power parity",
     "Explanation":"Takes into account variations in the cost of living between countries."
   },
   {
     "Unit.Chapter":"8.1 Measuring Development",
+    "Date":null,
     "Key Term":"corruption",
     "Explanation":"Dishonest or illegal behaviour by people in powerful positions, typically involving bribery."
   },
   {
     "Unit.Chapter":"8.1 Measuring Development",
+    "Date":null,
     "Key Term":"economic growth",
     "Explanation":"An increase in real GDP (%) after inflation is taken into account."
   },
   {
     "Unit.Chapter":"8.1 Measuring Development",
+    "Date":null,
     "Key Term":"infant mortality rate",
     "Explanation":"The number of deaths of children under one year of age per 1000 live births per year."
   },
   {
     "Unit.Chapter":"8.1 Measuring Development",
+    "Date":null,
     "Key Term":"human development index",
     "Explanation":"The composite UN measure of the disparities between countries, using indicators of health, education and income."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"ladder of development",
     "Explanation":"The idea that countries sit on different rungs of a ladder, each associated with a different set of economic activities. As countries develop, they become more capable of producing higher-level goods and services, and move up the ladder."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"primary product dependent",
     "Explanation":"When a country relies on one or a small number of primary products for most of its export earnings."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"marginalisation",
     "Explanation":"The process of being pushed to the edge of economic activity"
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"productive capability",
     "Explanation":"The productive resources, entrepreneurial capabilities, and production links that together determine a country\u2019s capability to produce goods and services, and enable it to grow and develop."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"growth collapse",
     "Explanation":"A significant decline in economic activity brought about by factors such as a global economic shock or by the impact of a major natural hazard."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"tiger economy",
     "Explanation":"An economy that undergoes rapid economic growth, usually accompanied by an increase in the standard of living."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"development gap",
     "Explanation":"The difference in income and quality of life in general between the highest and lowest-income countries in the world."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"landlocked countries",
     "Explanation":"A country that does not have direct access either to an ocean, or to a sea that is not landlocked."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"open economy",
     "Explanation":"A country with few investment and trade barriers, which encourages business with other countries."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"institutional quality",
     "Explanation":"The effectiveness, transparency and strength of the institutions within a country, such as the police and the courts."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"neo-colonialism",
     "Explanation":"The dominance of lower-income countries by wealthy ones, not by direct political control (as in colonialism), but by economic power and cultural influence."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"dependency theory",
     "Explanation":"A theory that blames the relative underdevelopment of the developing world on exploitation by the developed world, first through colonialism and then by neocolonialism."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"capitalism",
     "Explanation":"The social and economic system that relies on the market mechanism to distribute the factors of production (land, labour, capital) in the most efficient way."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"economic core",
     "Explanation":"The most highly developed region(s) in a country or in the world."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"economic periphery",
     "Explanation":"Parts of a country (or the world) outside of the economic core region(s)."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"multiplier effects",
     "Explanation":"The idea that an initial amount of spending or investment causes money to circulate in an economy, bringing a series of economic benefits over time."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"protectionism",
     "Explanation":"The practice of shielding a country\u2019s domestic industries from foreign competition by taxing imports."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"digital divide",
     "Explanation":"The gulf between those who have ready access to computers and the internet and those who do not."
   },
   {
     "Unit.Chapter":"8.2 Uneven Development",
+    "Date":null,
     "Key Term":"internet penetration rate",
     "Explanation":"The percentage of the total population that use the internet."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"sustainable development",
     "Explanation":"Development that meets the needs of the present without compromising the ability of future generations to meet their own needs."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"sustainable development goals",
     "Explanation":"The UN\u2019s 17 Sustainable Development Goals with their 169 targets were adopted by UN Member States in 2015. The overall objectives were to end poverty, protect the planet, and ensure all people enjoy peace and prosperity."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"environmental performance index",
     "Explanation":"An indicator that uses 58 performance indicators across 11 categories to score and rank countries around the globe on climate change performance, environmental health and ecosystem vitality."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"environmental sustainability",
     "Explanation":"The preservation and protection of the natural environment over time. It involves appropriate practices and policies to meet present-day needs without compromising the availability of resources in the future."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"circular economy",
     "Explanation":"An economic system based on the reuse and regeneration of materials and products, especially as a means of continuing production in a sustainable way."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"social sustainability",
     "Explanation":"The wellbeing of people and the communities they live in."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"economic sustainability",
     "Explanation":"Conducting economic activities in a way that preserves and promotes long-term economic wellbeing."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"Ultra Low Emission Zone",
     "Explanation":"A scheme in London that has significantly reduced the number of older, high-polluting vehicles entering the city\u2019s urban area. (ULEZ)"
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"United Nations Conference on Trade and Development",
     "Explanation":"The UN\u2019s commission that deals with trade, investment and development issues, assisting countries to integrate into the world economy on an equitable basis. It is based in Geneva, Switzerland."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"International Aid",
     "Explanation":"The giving of resources (money, food, goods, technology, etc.) by one country or organisation to another, lower-income country. The objective is to improve the economy and quality of life in that country."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"tied aid",
     "Explanation":"Foreign aid that must be spent in the country providing the aid (the donor country)."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"intermediate technology",
     "Explanation":"Aid supplied by a donor country whereby the level of technology and the skills required to service it are properly suited to the conditions in the receiving country."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"debt",
     "Explanation":"Money owed by a country to another country, to private creditors (e.g. commercial banks), or to international agencies such as the World Bank or IMF."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"debt service ratio",
     "Explanation":"The proportion of a country\u2019s GDP required to pay off its debts each year."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"debt relief",
     "Explanation":"The cancellation of debts owed by developing nations to developed countries or to institutions such as the World Bank, in order to allow the government to shift funds toward social development."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"microcredit",
     "Explanation":"Tiny loans and financial services to help people, mostly women, start businesses and escape poverty."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"social business",
     "Explanation":"A form of business that seeks to profit from investments that generate social improvements and serve a broader human development purpose."
   },
   {
     "Unit.Chapter":"8.3 Sustainable Development",
+    "Date":null,
     "Key Term":"archipelagic country",
     "Explanation":"A country made up of a group of islands, interconnecting waters, and other natural features that are closely interrelated."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"primary sector",
     "Explanation":"The economic sector that exploits raw materials. Farming, fishing, forestry and mining make up most jobs in this sector."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"secondary sector",
     "Explanation":"The economic sector that manufactures primary materials into finished products."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"tertiary sector",
     "Explanation":"The economic sector that provides services to people and to businesses."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"quaternary sector",
     "Explanation":"The economic sector that uses high technology to provide information and expertise to all sectors of an economy."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"product chain",
     "Explanation":"The full sequence of activities needed to turn raw materials into a finished product."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"labour intensive",
     "Explanation":"A production process where labour costs are high compared to expenditure on capital (factory, machinery, etc.)."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"subsistence agriculture",
     "Explanation":"The most labour-intensive and generally the smallest scale of agriculture, where the produce is consumed entirely or mainly by the family who work the land or tend the livestock."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"industrial revolution",
     "Explanation":"The transformation in the late eighteenth and nineteenth centuries of first the UK and then other European countries and the USA from agricultural into industrial nations."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"newly industrialised countries",
     "Explanation":"A country that since the 1960s has experienced very rapid growth in manufacturing industry."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"post-industrial countries",
     "Explanation":"A country where the tertiary sector dominates employment and where considerable deindustrialisation has occurred."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"mechanisation",
     "Explanation":"The replacement of human or animal forms of power by a mechanical system such as a tractor in agriculture."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"deindustrialisation",
     "Explanation":"The long-term absolute decline of employment in manufacturing."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"capital intensive",
     "Explanation":"A high level of investment in plant and machinery compared to labour."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"foreign direct investment",
     "Explanation":"Investment in physical capital in other countries by transnational corporations."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"accessibility",
     "Explanation":"The ease with which a place can be reached. An area with high accessibility will generally have a well-developed transport network and be centrally located."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"weight gain",
     "Explanation":"Where the finished product is heavier than the weight of the raw materials required to manufacture it."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"business\/retail parks",
     "Explanation":"Similar to an industrial estate, but dominated by tertiary activities."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"contanerisation",
     "Explanation":"A system of intermodal freight transport using standard international containers."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"deep-sea port",
     "Explanation":"A port that has the depth of water, natural or dredged, and the technology to handle very large ocean-going ships, particularly ultra-large container ships."
   },
   {
     "Unit.Chapter":"9.1 Changing Employment Structures",
+    "Date":null,
     "Key Term":"ultra-large container ship",
     "Explanation":"A vessel with a capacity of at least 14,000 TEUs (twenty-foot equivalent units)."
   },
   {
     "Unit.Chapter":"9.2 Impact of Globalisation and TNCs",
+    "Date":null,
     "Key Term":"Globalisation",
     "Explanation":"The increasing interdependence of the world economically, culturally and politically."
   },
   {
     "Unit.Chapter":"9.2 Impact of Globalisation and TNCs",
+    "Date":null,
     "Key Term":"global cities",
     "Explanation":"A city that is an important nodal point in the global economic system. These cities are major financial and decision-making centres."
   },
   {
     "Unit.Chapter":"9.2 Impact of Globalisation and TNCs",
+    "Date":null,
     "Key Term":"new international division of labor",
     "Explanation":"Divides production into different skills and tasks that are spread across countries rather than taking place within a single country."
   },
   {
     "Unit.Chapter":"9.2 Impact of Globalisation and TNCs",
+    "Date":null,
     "Key Term":"commodity chains",
     "Explanation":"The stages involved in manufacturing a finished product (commodity) for sale to consumers. These stages may occur in factories in different countries."
   },
   {
     "Unit.Chapter":"9.2 Impact of Globalisation and TNCs",
+    "Date":null,
     "Key Term":"international trade",
     "Explanation":"The exchange of goods and services between countries."
   },
   {
     "Unit.Chapter":"9.2 Impact of Globalisation and TNCs",
+    "Date":null,
     "Key Term":"trade bloc",
     "Explanation":"A group of countries that share trade agreements between each other."
   },
   {
     "Unit.Chapter":"9.2 Impact of Globalisation and TNCs",
+    "Date":null,
     "Key Term":"transport hub",
     "Explanation":"A location where routes converge, allowing for the efficient movement of goods and people. The most important transport hubs are often intermodal."
   },
   {
     "Unit.Chapter":"9.2 Impact of Globalisation and TNCs",
+    "Date":null,
     "Key Term":"cultural diffusion",
     "Explanation":"The spreading of cultural traits from one place to another."
   },
   {
     "Unit.Chapter":"9.2 Impact of Globalisation and TNCs",
+    "Date":null,
     "Key Term":"consumer culture",
     "Explanation":"A society in which patterns of consumption are a key basis for personal identity and status differentiation."
   },
   {
     "Unit.Chapter":"9.2 Impact of Globalisation and TNCs",
+    "Date":null,
     "Key Term":"disruptive technology",
     "Explanation":"An innovation that significantly alters the way that consumers, industries and businesses operate."
   },
   {
     "Unit.Chapter":"9.2 Impact of Globalisation and TNCs",
+    "Date":null,
     "Key Term":"transnational corporations",
     "Explanation":"A firm that owns or controls productive operations in more than one country through foreign direct investment."
   },
   {
     "Unit.Chapter":"9.2 Impact of Globalisation and TNCs",
+    "Date":null,
     "Key Term":"intra-firm trade",
     "Explanation":"The international trade of intermediate goods and services within the same firm (company)."
   },
   {
     "Unit.Chapter":"9.2 Impact of Globalisation and TNCs",
+    "Date":null,
     "Key Term":"global value chains",
     "Explanation":"A phenomenon whereby production is subdivided into activities carried out in different countries."
   },
   {
     "Unit.Chapter":"9.3 Tourism",
+    "Date":null,
     "Key Term":"tourism",
     "Explanation":"Travel away from the home environment for leisure, recreation and holidays, or to visit friends and relatives, or for business and professional reasons."
   },
   {
     "Unit.Chapter":"9.3 Tourism",
+    "Date":null,
     "Key Term":"international tourist arrivals",
     "Explanation":"The number of international tourists travelling worldwide or to particular destination countries, usually measured over the course of a year."
   },
   {
     "Unit.Chapter":"9.3 Tourism",
+    "Date":null,
     "Key Term":"international tourist receipts",
     "Explanation":"Defined by the WTO as expenditure by international inbound visitors, including their payments to national carriers for international transport."
   },
   {
     "Unit.Chapter":"9.3 Tourism",
+    "Date":null,
     "Key Term":"tourist-generating countries",
     "Explanation":"A country from which many people take holidays abroad."
   },
   {
     "Unit.Chapter":"9.3 Tourism",
+    "Date":null,
     "Key Term":"package tours",
     "Explanation":"The most popular form of foreign holiday, where travel, accommodation and meals may all be included in the price and booked in advance."
   },
   {
     "Unit.Chapter":"9.3 Tourism",
+    "Date":null,
     "Key Term":"travel motivators",
     "Explanation":"The reasons that people travel. The three major categories are leisure, business and visiting friends and relatives."
   },
   {
     "Unit.Chapter":"9.3 Tourism",
+    "Date":null,
     "Key Term":"economic leakages",
     "Explanation":"The part of the money a tourist pays for a foreign holiday that does not benefit the destination country because it goes elsewhere."
   },
   {
     "Unit.Chapter":"9.3 Tourism",
+    "Date":null,
     "Key Term":"sustainable tourism",
     "Explanation":"Tourism organised in such a way that its level can be sustained in the future without creating irreparable environmental, social and economic damage to the receiving area."
   },
   {
     "Unit.Chapter":"9.3 Tourism",
+    "Date":null,
     "Key Term":"destination footprint",
     "Explanation":"The environmental impact caused by an individual tourist on holiday in a particular destination."
   },
   {
     "Unit.Chapter":"9.3 Tourism",
+    "Date":null,
     "Key Term":"slow travel",
     "Explanation":"Visitors seeking a deeper connection to the culture, history and nature of the place they are visiting. They usually stay for longer at a destination while avoiding crowds of tourists and appreciating lesser-visited attractions."
   },
   {
     "Unit.Chapter":"9.3 Tourism",
+    "Date":null,
     "Key Term":"ecotourism",
     "Explanation":"A specialised form of tourism where people experience relatively untouched natural environments, and ensure that their presence does no further damage to these environments."
   },
   {
     "Unit.Chapter":"10.1 Food Production",
+    "Date":null,
     "Key Term":"arable farms",
     "Explanation":"The cultivation of crops."
   },
   {
     "Unit.Chapter":"10.1 Food Production",
+    "Date":null,
     "Key Term":"pastoral farming",
     "Explanation":"The rearing of livestock, such as dairy cattle, sheep and pigs."
   },
   {
     "Unit.Chapter":"10.1 Food Production",
+    "Date":null,
     "Key Term":"mixed farming",
     "Explanation":"Cultivating crops and keeping livestock together on a farm."
   },
   {
     "Unit.Chapter":"10.1 Food Production",
+    "Date":null,
     "Key Term":"extensive farming",
     "Explanation":"Where a relatively small amount of agricultural produce is obtained per hectare of land, so such farms tend to cover large areas of land. Inputs per unit of land are low."
   },
   {
     "Unit.Chapter":"10.1 Food Production",
+    "Date":null,
     "Key Term":"intensive farming",
     "Explanation":"Agriculture characterised by high inputs per unit of land to achieve high yields per hectare."
   },
   {
     "Unit.Chapter":"10.1 Food Production",
+    "Date":null,
     "Key Term":"organic farming",
     "Explanation":"Agriculture that does not use manufactured chemicals such as chemical fertilisers, pesticides, insecticides and herbicides."
   },
   {
     "Unit.Chapter":"10.1 Food Production",
+    "Date":null,
     "Key Term":"aeroponics",
     "Explanation":"A system where plants are never placed into water, with crops growing suspended in the air. Nutrients are supplied from a mist that is sprayed on to their roots. The entire process is enclosed, so the nutrient mist is able to remain around the plants for longer."
   },
   {
     "Unit.Chapter":"10.1 Food Production",
+    "Date":null,
     "Key Term":"hydroponics",
     "Explanation":"A system where plants may be suspended in nutrient water all the time or fed by an intermittent flow of water."
   },
   {
     "Unit.Chapter":"10.1 Food Production",
+    "Date":null,
     "Key Term":"aquaponics",
     "Explanation":"A system that combines fish farming (aquaculture) with hydroponics. Fish waste is naturally converted into nutrients for plants, while the plants filter the water for the fish. This creates a closed-loop ecosystem."
   },
   {
     "Unit.Chapter":"10.1 Food Production",
+    "Date":null,
     "Key Term":"system",
     "Explanation":"A situation in which there are recognisable inputs, processes and outputs, such as raw materials, labour, energy and capital. For example, a farm requires a range of inputs, such as labour and energy, before anything else can happen."
   },
   {
     "Unit.Chapter":"10.1 Food Production",
+    "Date":null,
     "Key Term":"input",
     "Explanation":"An element that is required for a process to take place."
   },
   {
     "Unit.Chapter":"10.1 Food Production",
+    "Date":null,
     "Key Term":"process",
     "Explanation":"An operation that take places on a farm, such as ploughing and harvesting, or the industrial activities that take place in a factory to make a finished product."
   },
   {
     "Unit.Chapter":"10.1 Food Production",
+    "Date":null,
     "Key Term":"output",
     "Explanation":"A finished product that is sold to customers or consumed, for example what a farm produces, such as milk, eggs, meat and crops."
   },
   {
     "Unit.Chapter":"10.2 Food Supply and Demand",
+    "Date":null,
     "Key Term":"per capita calorie supply",
     "Explanation":"The main international indicator used to show variations in global access to food supply. It has limitations \u2013 a wholesome diet requires more than just energy and supply figures do not include consumption-level waste (food that is wasted at household, restaurant and retail levels)."
   },
   {
     "Unit.Chapter":"10.2 Food Supply and Demand",
+    "Date":null,
     "Key Term":"diet",
     "Explanation":"The kinds of foods that a person, animal or community habitually eats."
   },
   {
     "Unit.Chapter":"10.2 Food Supply and Demand",
+    "Date":null,
     "Key Term":"food waste",
     "Explanation":"Perfectly edible foodstuffs that are thrown away at the retail and consumer level."
   },
   {
     "Unit.Chapter":"10.2 Food Supply and Demand",
+    "Date":null,
     "Key Term":"big data",
     "Explanation":"Extremely large data sets analysed computationally to reveal patterns, trends and associations."
   },
   {
     "Unit.Chapter":"10.2 Food Supply and Demand",
+    "Date":null,
     "Key Term":"agro-industrialisation",
     "Explanation":"Industrialised farming that is typically large scale and capital intensive."
   },
   {
     "Unit.Chapter":"10.2 Food Supply and Demand",
+    "Date":null,
     "Key Term":"green revolution",
     "Explanation":"The introduction of high-yielding seeds and modern agricultural techniques in developing countries."
   },
   {
     "Unit.Chapter":"10.2 Food Supply and Demand",
+    "Date":null,
     "Key Term":"new green revolution",
     "Explanation":"An approach to increasing agricultural production that draws upon the best of the agricultural technologies currently available. It emphasises improved farm management in order to minimise environmental damage from external inputs and benefits farmers and marginal areas bypassed by the original Green Revolution."
   },
   {
     "Unit.Chapter":"10.2 Food Supply and Demand",
+    "Date":null,
     "Key Term":"intermodal transport hubs",
     "Explanation":"A facility able to move containers between different modes of transport, with storage space for containers waiting for the next leg of the journey."
   },
   {
     "Unit.Chapter":"10.2 Food Supply and Demand",
+    "Date":null,
     "Key Term":"food miles",
     "Explanation":"The distance food travels from the farm where it is produced to the plate of the final consumer."
   },
   {
     "Unit.Chapter":"10.3 Challenges of Food Supply",
+    "Date":null,
     "Key Term":"agricultural regoins",
     "Explanation":"The application of techniques to control the growth and harvesting of animal and vegetable products."
   },
   {
     "Unit.Chapter":"10.3 Challenges of Food Supply",
+    "Date":null,
     "Key Term":"agricultural productivity",
     "Explanation":"The ratio of agricultural inputs to outputs."
   },
   {
     "Unit.Chapter":"10.3 Challenges of Food Supply",
+    "Date":null,
     "Key Term":"thermal limit for crop growth",
     "Explanation":"The temperature (low or high) beyond which a plant is unable to grow to a healthy state."
   },
   {
     "Unit.Chapter":"10.3 Challenges of Food Supply",
+    "Date":null,
     "Key Term":"irrigation",
     "Explanation":"Supplying dry land with water by systems of ditches or by more advanced means."
   },
   {
     "Unit.Chapter":"10.3 Challenges of Food Supply",
+    "Date":null,
     "Key Term":"ladder of agricultural technology",
     "Explanation":"Distinct levels of investment in and use of agricultural technology, resulting in an increase in agricultural productivity."
   },
   {
     "Unit.Chapter":"10.3 Challenges of Food Supply",
+    "Date":null,
     "Key Term":"land tenure",
     "Explanation":"The ways in which land is or can be owned. In the past inheritance laws have had a huge impact on the average size of farms."
   },
   {
     "Unit.Chapter":"10.3 Challenges of Food Supply",
+    "Date":null,
     "Key Term":"climate loss",
     "Explanation":"Pre-harvest food losses from: not planting a crop, or at least not the desired crop; changing crops due to weather; extreme weather reducing or wiping out a crop before harvest; increased predation, pests and\/or diseases resulting from climate change."
   },
   {
     "Unit.Chapter":"10.3 Challenges of Food Supply",
+    "Date":null,
     "Key Term":"food security",
     "Explanation":"When all people at all times have access to sufficient, safe, nutritious food to maintain a healthy and active life."
   },
   {
     "Unit.Chapter":"10.3 Challenges of Food Supply",
+    "Date":null,
     "Key Term":"food banks",
     "Explanation":"A place where stocks of food, typically basic provisions and non-perishable items, are supplied free of charge to people in need."
   },
   {
     "Unit.Chapter":"10.3 Challenges of Food Supply",
+    "Date":null,
     "Key Term":"malnutrition",
     "Explanation":"Insufficiency in one or more of the nutritional elements necessary for health and wellbeing."
   },
   {
     "Unit.Chapter":null,
+    "Date":null,
     "Key Term":"shelterbelts",
     "Explanation":"A barrier of trees and shrubs that protects against the wind and reduces erosion."
   },
   {
     "Unit.Chapter":null,
+    "Date":null,
     "Key Term":"desertification",
     "Explanation":"The transformation of land that could once support human life into desert."
   },
   {
     "Unit.Chapter":"10.4 Energy Production",
+    "Date":null,
     "Key Term":"non-renewable energy",
     "Explanation":"The fossil fuels (coal, oil, natural gas) and nuclear fuel. These resources are finite so that as they are used up the supply that remains is reduced. Eventually, these non-renewable resources could become completely exhausted."
   },
   {
     "Unit.Chapter":"10.4 Energy Production",
+    "Date":null,
     "Key Term":"renewable energy",
     "Explanation":"Sources of energy such as solar and wind power that are not depleted as they are used."
   },
   {
     "Unit.Chapter":"10.4 Energy Production",
+    "Date":null,
     "Key Term":"fuelwood",
     "Explanation":"Wood and charcoal used to supply energy."
   },
   {
     "Unit.Chapter":"10.4 Energy Production",
+    "Date":null,
     "Key Term":"energy poverty",
     "Explanation":"A lack of access to modern energy services, particularly electricity."
   },
   {
     "Unit.Chapter":"10.4 Energy Production",
+    "Date":null,
     "Key Term":"fuel poverty",
     "Explanation":"When a person on a low-income lives in a home that cannot be kept warm at a reasonable cost."
   },
   {
     "Unit.Chapter":"10.4 Energy Production",
+    "Date":null,
     "Key Term":"energy mix",
     "Explanation":"The relative contribution of different energy sources to a country\u2019s energy consumption."
   },
   {
     "Unit.Chapter":"10.4 Energy Production",
+    "Date":null,
     "Key Term":"clean air transition",
     "Explanation":"The period of change from heavy reliance on fossil fuels to most of people\u2019s energy needs being supplied by renewable sources of energy."
   },
   {
     "Unit.Chapter":"10.5 Energy Demand and Supply",
+    "Date":null,
     "Key Term":"environmental impact assessments",
     "Explanation":"A study carried out before a development project is undertaken to assess the possible damage to the environment."
   },
   {
     "Unit.Chapter":"10.5 Energy Demand and Supply",
+    "Date":null,
     "Key Term":"energy gap",
     "Explanation":"The difference between a country\u2019s demand for energy and its ability to satisfy this demand from its own resources."
   },
   {
     "Unit.Chapter":"10.5 Energy Demand and Supply",
+    "Date":null,
     "Key Term":"energy security",
     "Explanation":"The uninterrupted availability of energy sources at an affordable price."
   },
   {
     "Unit.Chapter":"10.5 Energy Demand and Supply",
+    "Date":null,
     "Key Term":"import dependency",
     "Explanation":"The proportion of energy consumption supplied by imports from other countries."
   },
   {
     "Unit.Chapter":"10.5 Energy Demand and Supply",
+    "Date":null,
     "Key Term":"geopolitics",
     "Explanation":"Political relations among nations, particularly relating to disputes about borders, territories and resources."
   },
   {
     "Unit.Chapter":"10.5 Energy Demand and Supply",
+    "Date":null,
     "Key Term":"strategic petroleum reserve",
     "Explanation":"A large reserve of oil held by a country to tide it over for a few months or so if normal oil supplies are disrupted."
   },
   {
     "Unit.Chapter":"10.5 Energy Demand and Supply",
+    "Date":null,
     "Key Term":"energy pathways",
     "Explanation":"A supply route between energy producers and consumers, which may be through pipelines, shipping routes or electricity cables."
   },
   {
     "Unit.Chapter":"10.5 Energy Demand and Supply",
+    "Date":null,
     "Key Term":"energy policy",
     "Explanation":"The actions taken by a government to affect the demand for energy as well as the supply of it."
   },
   {
     "Unit.Chapter":"10.6 Impacts of Energy Production",
+    "Date":null,
     "Key Term":"Geothermal Energy",
     "Explanation":"The natural heat found in the Earth\u2019s crust in the form of steam, hot water and hot rock."
   },
   {
     "Unit.Chapter":"10.6 Impacts of Energy Production",
+    "Date":null,
     "Key Term":"hydroelectric energy",
     "Explanation":"Electricity production using the potential energy of water."
   },
   {
     "Unit.Chapter":"10.6 Impacts of Energy Production",
+    "Date":null,
     "Key Term":"solar energy",
     "Explanation":"Electricity production using sunlight."
   },
   {
     "Unit.Chapter":"10.6 Impacts of Energy Production",
+    "Date":null,
     "Key Term":"wave energy",
     "Explanation":"Electricty production using the movement of the sea"
   },
   {
     "Unit.Chapter":"10.6 Impacts of Energy Production",
+    "Date":null,
     "Key Term":"nuclear energy",
     "Explanation":"Electricity production using the power of atomic bonds."
   },
   {
     "Unit.Chapter":"10.6 Impacts of Energy Production",
+    "Date":null,
     "Key Term":"economy of scale",
     "Explanation":"The reduction in unit cost as the scale of an operation increases."
   },
   {
     "Unit.Chapter":"10.6 Impacts of Energy Production",
+    "Date":null,
     "Key Term":"energy intensity",
     "Explanation":"The amount of energy used to produce a given level of output."
   },
   {
     "Unit.Chapter":"10.6 Impacts of Energy Production",
+    "Date":null,
     "Key Term":"smart power grids",
     "Explanation":"An electricity network that uses digital and other advanced technologies to monitor and manage the transport of electricity from all generating sources to meet the varying electricity demands of end users."
   },
   {
     "Unit.Chapter":"10.6 Impacts of Energy Production",
+    "Date":null,
     "Key Term":"smart meter",
     "Explanation":"An internet-capable device that records the detailed use of household energy."
   },
   {
     "Unit.Chapter":"10.6 Impacts of Energy Production",
+    "Date":null,
     "Key Term":"energy conservation",
     "Explanation":"Reducing the consumption of energy by using it more efficiently."
   },
   {
     "Unit.Chapter":"10.6 Impacts of Energy Production",
+    "Date":null,
     "Key Term":"community energy",
     "Explanation":"Energy produced close to the point of consumption."
   },
   {
     "Unit.Chapter":"10.6 Impacts of Energy Production",
+    "Date":null,
     "Key Term":"microgeneration",
     "Explanation":"A generator that produces electricity with an output of less than 50 KW."
   },
   {
     "Unit.Chapter":"10.6 Impacts of Energy Production",
+    "Date":null,
     "Key Term":"battery energy storage systems",
     "Explanation":"A battery system that enables excess energy from renewables to be stored and then released when the power is needed most. (BESS)"
   },
   {
     "Unit.Chapter":"Cartographic Skills",
+    "Date":null,
     "Key Term":"atlas maps",
     "Explanation":"A collection of maps usually showing different countries, continents, and physical and human geography."
   },
   {
     "Unit.Chapter":"Cartographic Skills",
+    "Date":null,
     "Key Term":"scale",
     "Explanation":"This term refer to the relationship between the distance on a map and the corresponding real-life distance on the ground, e.g. on a 1:25,000 map, every 4 cm on the map refers to 1 km on the ground, and on a 1:50,000 map every 2 cm on the map refers to 1 km on the ground."
   },
   {
     "Unit.Chapter":"Cartographic Skills",
+    "Date":null,
     "Key Term":"base map",
     "Explanation":"A very simple map, often just an outline, which can then be filled in to show some characteristics of the place in question."
   },
   {
     "Unit.Chapter":"Cartographic Skills",
+    "Date":null,
     "Key Term":"annotation",
     "Explanation":"Descriptive or explanatory labelling of a photo or diagram to show the main characteristics\/features."
   },
   {
     "Unit.Chapter":"Cartographic Skills",
+    "Date":null,
     "Key Term":"six-figure references",
     "Explanation":"A set of six numbers that identifies the exact location of a place on a map. The first three numbers refer to the eastings and the second three numbers refer to the northings."
   },
   {
     "Unit.Chapter":"Cartographic Skills",
+    "Date":null,
     "Key Term":"four-figure square references",
     "Explanation":"A four-figured number that shows the location of a large feature. The first two numbers refer to the eastings and the second two numbers refer to the northings"
   },
   {
     "Unit.Chapter":"Mathematical Skills",
+    "Date":null,
     "Key Term":"mean",
     "Explanation":"A type of average; it is the sum of all the values divided by the number of values."
   },
   {
     "Unit.Chapter":"Mathematical Skills",
+    "Date":null,
     "Key Term":"mode",
     "Explanation":"The most common value in a population."
   },
   {
     "Unit.Chapter":"Mathematical Skills",
+    "Date":null,
     "Key Term":"unimodal",
     "Explanation":"A distribution of a population where there is one clear most common size."
   },
   {
     "Unit.Chapter":"Mathematical Skills",
+    "Date":null,
     "Key Term":"bimodal",
     "Explanation":"A distribution of a population that has two modes (most frequent values)."
   },
   {
     "Unit.Chapter":"Mathematical Skills",
+    "Date":null,
     "Key Term":"median",
     "Explanation":"The middle value when all the data are placed in ascending or descending order."
   },
   {
     "Unit.Chapter":"Mathematical Skills",
+    "Date":null,
     "Key Term":"decimal",
     "Explanation":"A way of expressing \u2018inbetween\u2019 numbers. The term comes from the Latin word decimus, meaning tenth."
   },
   {
     "Unit.Chapter":"Mathematical Skills",
+    "Date":null,
     "Key Term":"fraction",
     "Explanation":"A fraction is a part of a whole, e.g 1\/3 of Borneo\u2019s rainforest has been deforested."
   },
   {
     "Unit.Chapter":"Mathematical Skills",
+    "Date":null,
     "Key Term":"percentage",
     "Explanation":"A number or ratio expressed as a fraction of 100 (%)."
   },
   {
     "Unit.Chapter":"Mathematical Skills",
+    "Date":null,
     "Key Term":"ratio",
     "Explanation":"A method of comparing relative size or proportions, e.g. the area deforested in Borneo compared to the forested areas is 1:2 (i.e. one-third has been deforested and two-thirds remain)."
   },
   {
     "Unit.Chapter":"Mathematical Skills",
+    "Date":null,
     "Key Term":"standard notation",
     "Explanation":"The number that we would normally write, e.g. 281."
   },
   {
     "Unit.Chapter":"Mathematical Skills",
+    "Date":null,
     "Key Term":"positive index",
     "Explanation":"A power value that is positive, e.g. 23 = 2 \u00d7 2 \u00d7 2 = 8."
   },
   {
     "Unit.Chapter":"Mathematical Skills",
+    "Date":null,
     "Key Term":"negative indicies",
     "Explanation":"Powers that have a minus sign"
   },
   {
     "Unit.Chapter":"Fieldwork",
+    "Date":null,
     "Key Term":"range",
     "Explanation":"The difference between the highest value and the lowest value."
   },
   {
     "Unit.Chapter":"Fieldwork",
+    "Date":null,
     "Key Term":"threshold characteristics",
     "Explanation":"The number of people needed to support a service, e.g. a small number for a newsagent, a large number for a car salesroom."
   },
   {
     "Unit.Chapter":"Fieldwork",
+    "Date":null,
     "Key Term":"systematic sampling",
     "Explanation":"A method of selecting individuals for research purposes. In this method, an individual for study is selected at a set interval (e.g. every 10th person)"
   },
   {
     "Unit.Chapter":"Fieldwork",
+    "Date":null,
     "Key Term":"random sampling",
     "Explanation":"A method of selecting individuals for research purposes. In this method, there is no set pattern or interval for choosing an individual to participate in the study."
   },
   {
     "Unit.Chapter":"Fieldwork",
+    "Date":null,
     "Key Term":"stratified sampling",
     "Explanation":"A method of selecting individuals for research purposes. In this method, different subpopulations or groups are created and individuals are selected from these groups using either random or systematic methods."
   }
